@@ -34,5 +34,24 @@ class HomePageVC: UIViewController {
           
         }
     }
+    
+    @IBAction func startButt(_ sender: Any) {
+        
+        let vc = storyboard?.instantiateViewController(identifier: "MainViewController") as! MainViewController
+        vc.modalPresentationStyle = .fullScreen
+        present(vc, animated: true, completion: nil)
+        
+    }
+    
+    
+    @IBAction func registrationButt(_ sender: Any) {
+        
+        let vc = storyboard?.instantiateViewController(identifier: "SignInViewController") as! SignInVC
+        vc.modalPresentationStyle = .fullScreen
+        present(vc, animated: true, completion: nil)
+        
+    }
+    
+    
 }
 

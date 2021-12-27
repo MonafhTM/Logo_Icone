@@ -72,5 +72,4 @@ class HomeVC: UIPageViewController ,UIPageViewControllerDelegate, UIPageViewCont
     func presentationIndex(for pageViewController: UIPageViewController) -> Int {
         return 0
     }
-    
 }
