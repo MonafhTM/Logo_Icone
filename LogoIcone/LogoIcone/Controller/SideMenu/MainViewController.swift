@@ -72,7 +72,7 @@ class MainViewController: UIViewController {
         view.addGestureRecognizer(panGestureRecognizer)
 
         // Default Main View Controller
-        showViewController(viewController: UINavigationController.self, storyboardId: "SectionNavID")
+        showViewController(viewController: UINavigationController.self, storyboardId: "SearchNavID")
     }
 
     // Keep the state of the side menu (expanded or collapse) in rotation
@@ -135,14 +135,20 @@ extension MainViewController: SideMenuViewControllerDelegate {
     func selectedCell(_ row: Int) {
         switch row {
         case 0:
-            // Profile
-            self.showViewController(viewController: UINavigationController.self, storyboardId: "ProfileNavID")
+            // SearchIcon
+            self.showViewController(viewController: UINavigationController.self, storyboardId: "SearchNavID")
         case 1:
-            // Section
-            self.showViewController(viewController: UINavigationController.self, storyboardId: "SectionNavID")
+            // M
+            self.showViewController(viewController: UINavigationController.self, storyboardId: "LogoNavID")
         case 2:
-            // Video
+            // Movies
             self.showViewController(viewController: UINavigationController.self, storyboardId: "VideoNavID")
+        case 3:
+            // Books
+            self.showViewController(viewController: HomeVC.self, storyboardId: "HomeID")
+        case 4:
+//            // Profile
+            self.showViewController(viewController: UINavigationController.self, storyboardId: "ProfileNaID")
 
         default:
             break

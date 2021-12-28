@@ -25,10 +25,12 @@ class SideMenuViewController: UIViewController {
     var defaultHighlightedCell: Int = 0
 
     var menu: [SideMenuModel] = [
-        
-        SideMenuModel(icon: UIImage(systemName: "person.fill")!, title: "Profile"),
-        SideMenuModel(icon: UIImage(systemName: "house.fill")!, title: "Section"),
-        SideMenuModel(icon: UIImage(systemName: "music.note")!, title: "Video")
+        SideMenuModel(icon: UIImage(systemName: "magnifyingglass.circle.fill")!, title: "Search Icon"),
+        SideMenuModel(icon: UIImage(systemName: "theatermasks.fill")!, title: "LOGO"),
+        SideMenuModel(icon: UIImage(systemName: "playpause.fill")!, title: "Video"),
+        SideMenuModel(icon: UIImage(systemName: "house.fill")!, title: "Home"),
+
+        SideMenuModel(icon: UIImage(systemName: "person.fill")!, title: "Profile")
     ]
 
     override func viewDidLoad() {
@@ -49,7 +51,7 @@ class SideMenuViewController: UIViewController {
         // Footer
         self.footerLabel.textColor = UIColor.white
         self.footerLabel.font = UIFont.systemFont(ofSize: 12, weight: .bold)
-        self.footerLabel.text = "Developed by John Codeos"
+        self.footerLabel.text = "F"
 
         // Register TableView Cell
         self.sideMenuTableView.register(SideMenuCell.nib, forCellReuseIdentifier: SideMenuCell.identifier)
@@ -89,7 +91,7 @@ extension SideMenuViewController: UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         self.delegate?.selectedCell(indexPath.row)
-        // Remove highlighted color when you press the 'Profile' and 'Like us on facebook' cell
+        // Remove highlighted color when you press the 'P' and 'Like us on f' cell
         if indexPath.row == 4 || indexPath.row == 6 {
             tableView.deselectRow(at: indexPath, animated: true)
         }

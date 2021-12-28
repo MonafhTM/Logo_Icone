@@ -9,7 +9,6 @@ import UIKit
 
 class HomeVC: UIPageViewController ,UIPageViewControllerDelegate, UIPageViewControllerDataSource {
     
-    
     var arryInformaition = [UIViewController]()
     
     override func viewDidLoad() {

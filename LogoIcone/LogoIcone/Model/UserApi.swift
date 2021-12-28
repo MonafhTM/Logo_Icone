@@ -3,11 +3,11 @@
 //  LogoIcone
 //
 //  Created by Monafh on 22/05/1443 AH.
-//
 
 
 import Foundation
 import FirebaseFirestore
+import FirebaseAuth
 
 class UserApi {
     
@@ -15,18 +15,13 @@ class UserApi {
         
         let refUsers = Firestore.firestore().collection("Users")
         
-        
         refUsers.document(uid).setData(User.CreateUser( password: password, email: email ))
-        
         
     }
     
     static func addProfileInfo (userName : String ,firstName :String,lastName :String, bio :String , age: Int ,gender : String, uid:String ,completion: @escaping (Bool) -> Void) {
         
         let refProfile = Firestore.firestore().collection("Users")
-        
-        
-//        refProfile.document(uid).setData(User.CreateProfile(userName:userName,firstName:firstName, lastName: lastName, bio: bio, age: age, gender: gender) )
         
         refProfile.document(uid).setData( User.CreateProfile(userName:userName,firstName:firstName, lastName: lastName, bio: bio, age: age, gender: gender) , completion: { error in
             
@@ -35,11 +30,7 @@ class UserApi {
             } else {
                 completion(true)
             }
-            
         })
-        
-        
-        
     }
     
     static func getUser(uid:String,completion: @escaping (User) -> Void) {
@@ -52,7 +43,6 @@ class UserApi {
                 completion(user)
             }
         }
-        
     }
     
     static func getProfile(uid:String,completion: @escaping (User) -> Void) {
@@ -64,10 +54,8 @@ class UserApi {
                 let user = User.getProfile(dict: document.data()!)
                 completion(user)
                 
-                
-                
             }
         }
-        
     }
+    
 }
