@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-extension PVC: UICollectionViewDelegateFlowLayout,UICollectionViewDataSource {
+extension SearchVC: UICollectionViewDelegateFlowLayout,UICollectionViewDataSource {
     
     
     // MARK: - collection View data source
@@ -31,6 +31,9 @@ extension PVC: UICollectionViewDelegateFlowLayout,UICollectionViewDataSource {
         iconFormatElement = icons_Objects[indexPath.row].rasterSizes[8].formats[0]
         
         selectedIndex = indexPath.row
+//        let vc = storyboard?.instantiateViewController(identifier: "MainViewController") as! DownloadViewController
+//        vc.modalPresentationStyle = .fullScreen
+//        present(vc, animated: true, completion: nil)
         performSegue(withIdentifier: "toDetals", sender: collectionView.cellForItem(at: indexPath))
         
     }

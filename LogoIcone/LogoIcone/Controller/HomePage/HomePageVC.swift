@@ -3,7 +3,6 @@
 //  LogoIcone
 //
 //  Created by Monafh on 21/05/1443 AH.
-//
 
 import UIKit
 
@@ -35,18 +34,22 @@ class HomePageVC: UIViewController {
     
     @IBAction func startButt(_ sender: Any) {
         
-        let vc = storyboard?.instantiateViewController(identifier: "MainViewController") as! MainViewController
-        vc.modalPresentationStyle = .fullScreen
-        present(vc, animated: true, completion: nil)
+        performSegue(withIdentifier: "side", sender: nil)
+//        let vc = storyboard?.instantiateViewController(identifier: "MainViewController") as! MainViewController
+//        vc.modalPresentationStyle = .fullScreen
+//        present(vc, animated: true, completion: nil)
         
     }
     
     @IBAction func registrationButt(_ sender: Any) {
         
-        let vc = storyboard?.instantiateViewController(identifier: "SignInViewController") as! SignIn
+        
+//        performSegue(withIdentifier: "SignInVC", sender: nil)
+        
+        let vc = storyboard?.instantiateViewController(identifier: "SignInVC") as! SignIn
         vc.modalPresentationStyle = .fullScreen
         present(vc, animated: true, completion: nil)
-        
+//
     }
 }
 

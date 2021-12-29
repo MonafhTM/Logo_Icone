@@ -46,6 +46,9 @@ class SignIn : UIViewController {
             print("email:\(String(describing: authResult?.user.email))")
             print("uid:\(String(describing: authResult?.user.uid))")
             // ...
+            let vc = self?.storyboard?.instantiateViewController(identifier: "saveProfile") as! ProfileTVC
+            vc.modalPresentationStyle = .fullScreen
+            self?.present(vc, animated: true, completion: nil)
         }
     }
     

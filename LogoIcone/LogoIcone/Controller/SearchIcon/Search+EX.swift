@@ -10,7 +10,7 @@ import UIKit
 
 
 
-extension PVC {
+extension SearchVC {
     
     //    MARK: - simple Request
     func simpleReqest(nameOfTheSerach: String, size: Int){

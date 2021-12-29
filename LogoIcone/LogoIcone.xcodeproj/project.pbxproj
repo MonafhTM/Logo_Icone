@@ -7,10 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A757A017277C440700465551 /* LogoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A757A016277C440700465551 /* LogoVC.swift */; };
+		A757A019277C445700465551 /* LogoTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A757A018277C445700465551 /* LogoTVCell.swift */; };
+		A757A01B277C449800465551 /* LogoCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A757A01A277C449800465551 /* LogoCVCell.swift */; };
 		A77888822777C78E0034E303 /* SideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77888812777C78E0034E303 /* SideMenuViewController.swift */; };
 		A77888842777C7B80034E303 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77888832777C7B80034E303 /* MainViewController.swift */; };
 		A77888862777C96C0034E303 /* SideMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77888852777C96C0034E303 /* SideMenuCell.swift */; };
-		A778888827783EBA0034E303 /* SideMenuModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A778888727783EBA0034E303 /* SideMenuModel.swift */; };
 		A778888A2778484C0034E303 /* SectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77888892778484C0034E303 /* SectionViewController.swift */; };
 		A778888C27784BDB0034E303 /* VideoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A778888B27784BDB0034E303 /* VideoVC.swift */; };
 		A778888E27784CFA0034E303 /* ProfileTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A778888D27784CFA0034E303 /* ProfileTVC.swift */; };
@@ -34,19 +36,23 @@
 		A783CD9527779FED00D1503B /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A783CD9427779FED00D1503B /* HomeVC.swift */; };
 		A79BDC982779AFD60029DADA /* CreateProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79BDC972779AFD60029DADA /* CreateProfileVC.swift */; };
 		A79BDC9A2779B41E0029DADA /* CachingProfileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79BDC992779B41E0029DADA /* CachingProfileManager.swift */; };
-		A79BDC9C277A252E0029DADA /* PVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79BDC9B277A252E0029DADA /* PVC.swift */; };
-		A79BDCA2277B129D0029DADA /* PVC+EX.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79BDCA1277B129D0029DADA /* PVC+EX.swift */; };
-		A79BDCA4277B17780029DADA /* PVC+CollectionV.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79BDCA3277B17780029DADA /* PVC+CollectionV.swift */; };
+		A79BDC9C277A252E0029DADA /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79BDC9B277A252E0029DADA /* SearchVC.swift */; };
+		A79BDCA2277B129D0029DADA /* Search+EX.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79BDCA1277B129D0029DADA /* Search+EX.swift */; };
+		A79BDCA4277B17780029DADA /* Search+CollectionV.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79BDCA3277B17780029DADA /* Search+CollectionV.swift */; };
 		A79BDCA6277B17AC0029DADA /* CollectioViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79BDCA5277B17AC0029DADA /* CollectioViewCell.swift */; };
 		A79BDCA9277B1B000029DADA /* DownloadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79BDCA8277B1B000029DADA /* DownloadViewController.swift */; };
-		A79BDCAB277B37460029DADA /* GoogleService-Info-2.plist in Resources */ = {isa = PBXBuildFile; fileRef = A79BDCAA277B37460029DADA /* GoogleService-Info-2.plist */; };
+		A79BDCAF277B3A050029DADA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A79BDCAE277B3A040029DADA /* GoogleService-Info.plist */; };
+		A79BDCB2277B49DF0029DADA /* SideMenu in Frameworks */ = {isa = PBXBuildFile; productRef = A79BDCB1277B49DF0029DADA /* SideMenu */; };
+		A79BDCB4277B4E670029DADA /* TableMuneTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79BDCB3277B4E670029DADA /* TableMuneTVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A757A016277C440700465551 /* LogoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoVC.swift; sourceTree = "<group>"; };
+		A757A018277C445700465551 /* LogoTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoTVCell.swift; sourceTree = "<group>"; };
+		A757A01A277C449800465551 /* LogoCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoCVCell.swift; sourceTree = "<group>"; };
 		A77888812777C78E0034E303 /* SideMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuViewController.swift; sourceTree = "<group>"; };
 		A77888832777C7B80034E303 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		A77888852777C96C0034E303 /* SideMenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuCell.swift; sourceTree = "<group>"; };
-		A778888727783EBA0034E303 /* SideMenuModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuModel.swift; sourceTree = "<group>"; };
 		A77888892778484C0034E303 /* SectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionViewController.swift; sourceTree = "<group>"; };
 		A778888B27784BDB0034E303 /* VideoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoVC.swift; sourceTree = "<group>"; };
 		A778888D27784CFA0034E303 /* ProfileTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTVC.swift; sourceTree = "<group>"; };
@@ -68,12 +74,13 @@
 		A783CD9427779FED00D1503B /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		A79BDC972779AFD60029DADA /* CreateProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateProfileVC.swift; sourceTree = "<group>"; };
 		A79BDC992779B41E0029DADA /* CachingProfileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CachingProfileManager.swift; sourceTree = "<group>"; };
-		A79BDC9B277A252E0029DADA /* PVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PVC.swift; sourceTree = "<group>"; };
-		A79BDCA1277B129D0029DADA /* PVC+EX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PVC+EX.swift"; sourceTree = "<group>"; };
-		A79BDCA3277B17780029DADA /* PVC+CollectionV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PVC+CollectionV.swift"; sourceTree = "<group>"; };
+		A79BDC9B277A252E0029DADA /* SearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
+		A79BDCA1277B129D0029DADA /* Search+EX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Search+EX.swift"; sourceTree = "<group>"; };
+		A79BDCA3277B17780029DADA /* Search+CollectionV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Search+CollectionV.swift"; sourceTree = "<group>"; };
 		A79BDCA5277B17AC0029DADA /* CollectioViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectioViewCell.swift; sourceTree = "<group>"; };
 		A79BDCA8277B1B000029DADA /* DownloadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadViewController.swift; sourceTree = "<group>"; };
-		A79BDCAA277B37460029DADA /* GoogleService-Info-2.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info-2.plist"; path = "../../../../Downloads/GoogleService-Info-2.plist"; sourceTree = "<group>"; };
+		A79BDCAE277B3A040029DADA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A79BDCB3277B4E670029DADA /* TableMuneTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableMuneTVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +91,7 @@
 				A783CD82277755A400D1503B /* FirebaseAnalyticsSwift-Beta in Frameworks */,
 				A783CD86277755A400D1503B /* FirebaseFirestore in Frameworks */,
 				A783CD84277755A400D1503B /* FirebaseAuth in Frameworks */,
+				A79BDCB2277B49DF0029DADA /* SideMenu in Frameworks */,
 				A783CD80277755A400D1503B /* FirebaseAnalytics in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -91,13 +99,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		A778887C2777C6EF0034E303 /* SideMenu */ = {
+		A757A014277C09A100465551 /* Side-X */ = {
 			isa = PBXGroup;
 			children = (
 				A77888832777C7B80034E303 /* MainViewController.swift */,
 				A77888812777C78E0034E303 /* SideMenuViewController.swift */,
 				A77888852777C96C0034E303 /* SideMenuCell.swift */,
 				A7788891277857410034E303 /* SideMenuCell.xib */,
+			);
+			path = "Side-X";
+			sourceTree = "<group>";
+		};
+		A757A015277C0B2000465551 /* Logo */ = {
+			isa = PBXGroup;
+			children = (
+				A757A016277C440700465551 /* LogoVC.swift */,
+				A757A018277C445700465551 /* LogoTVCell.swift */,
+				A757A01A277C449800465551 /* LogoCVCell.swift */,
+			);
+			path = Logo;
+			sourceTree = "<group>";
+		};
+		A778887C2777C6EF0034E303 /* SideMenu */ = {
+			isa = PBXGroup;
+			children = (
+				A757A014277C09A100465551 /* Side-X */,
+				A79BDCB3277B4E670029DADA /* TableMuneTVC.swift */,
 			);
 			path = SideMenu;
 			sourceTree = "<group>";
@@ -138,7 +165,7 @@
 				A783CD892777598900D1503B /* Controller */,
 				A783CD6B27774BD000D1503B /* Main.storyboard */,
 				A783CD7627774BD300D1503B /* Info.plist */,
-				A79BDCAA277B37460029DADA /* GoogleService-Info-2.plist */,
+				A79BDCAE277B3A040029DADA /* GoogleService-Info.plist */,
 				A783CD6E27774BD000D1503B /* LogoIcone.xcdatamodeld */,
 			);
 			path = LogoIcone;
@@ -150,7 +177,6 @@
 				A778889927787E950034E303 /* User.swift */,
 				A778889B27787EED0034E303 /* UserApi.swift */,
 				A778889D27787F610034E303 /* Icons.swift */,
-				A778888727783EBA0034E303 /* SideMenuModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -169,6 +195,7 @@
 		A783CD892777598900D1503B /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				A757A015277C0B2000465551 /* Logo */,
 				A783CD962777A84E00D1503B /* HomePage */,
 				A778889F27787FE80034E303 /* Registration */,
 				A778887C2777C6EF0034E303 /* SideMenu */,
@@ -193,9 +220,9 @@
 			isa = PBXGroup;
 			children = (
 				A79BDC9E277AE9910029DADA /* Cell */,
-				A79BDC9B277A252E0029DADA /* PVC.swift */,
-				A79BDCA1277B129D0029DADA /* PVC+EX.swift */,
-				A79BDCA3277B17780029DADA /* PVC+CollectionV.swift */,
+				A79BDC9B277A252E0029DADA /* SearchVC.swift */,
+				A79BDCA1277B129D0029DADA /* Search+EX.swift */,
+				A79BDCA3277B17780029DADA /* Search+CollectionV.swift */,
 			);
 			path = SearchIcon;
 			sourceTree = "<group>";
@@ -237,6 +264,7 @@
 				A783CD81277755A400D1503B /* FirebaseAnalyticsSwift-Beta */,
 				A783CD83277755A400D1503B /* FirebaseAuth */,
 				A783CD85277755A400D1503B /* FirebaseFirestore */,
+				A79BDCB1277B49DF0029DADA /* SideMenu */,
 			);
 			productName = LogoIcone;
 			productReference = A783CD6227774BD000D1503B /* LogoIcone.app */;
@@ -268,6 +296,7 @@
 			mainGroup = A783CD5927774BD000D1503B;
 			packageReferences = (
 				A783CD7E277755A400D1503B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				A79BDCB0277B49DF0029DADA /* XCRemoteSwiftPackageReference "SideMenu" */,
 			);
 			productRefGroup = A783CD6327774BD000D1503B /* Products */;
 			projectDirPath = "";
@@ -283,9 +312,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A79BDCAB277B37460029DADA /* GoogleService-Info-2.plist in Resources */,
 				A783CD7527774BD300D1503B /* LaunchScreen.storyboard in Resources */,
 				A783CD7227774BD300D1503B /* Assets.xcassets in Resources */,
+				A79BDCAF277B3A050029DADA /* GoogleService-Info.plist in Resources */,
 				A7788892277857410034E303 /* SideMenuCell.xib in Resources */,
 				A783CD6D27774BD000D1503B /* Main.storyboard in Resources */,
 			);
@@ -298,18 +327,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A79BDCB4277B4E670029DADA /* TableMuneTVC.swift in Sources */,
+				A757A017277C440700465551 /* LogoVC.swift in Sources */,
 				A778888E27784CFA0034E303 /* ProfileTVC.swift in Sources */,
 				A778889E27787F610034E303 /* Icons.swift in Sources */,
 				A778889C27787EED0034E303 /* UserApi.swift in Sources */,
 				A79BDCA9277B1B000029DADA /* DownloadViewController.swift in Sources */,
-				A79BDC9C277A252E0029DADA /* PVC.swift in Sources */,
+				A79BDC9C277A252E0029DADA /* SearchVC.swift in Sources */,
 				A783CD6A27774BD000D1503B /* HomePageVC.swift in Sources */,
 				A79BDC982779AFD60029DADA /* CreateProfileVC.swift in Sources */,
 				A783CD9527779FED00D1503B /* HomeVC.swift in Sources */,
 				A77888822777C78E0034E303 /* SideMenuViewController.swift in Sources */,
 				A778889827787CFE0034E303 /* SignIn.swift in Sources */,
 				A783CD7027774BD000D1503B /* LogoIcone.xcdatamodeld in Sources */,
-				A778888827783EBA0034E303 /* SideMenuModel.swift in Sources */,
 				A79BDCA6277B17AC0029DADA /* CollectioViewCell.swift in Sources */,
 				A778888C27784BDB0034E303 /* VideoVC.swift in Sources */,
 				A77888A1277880250034E303 /* SignUp.swift in Sources */,
@@ -320,8 +350,10 @@
 				A783CD6827774BD000D1503B /* SceneDelegate.swift in Sources */,
 				A77888842777C7B80034E303 /* MainViewController.swift in Sources */,
 				A77888862777C96C0034E303 /* SideMenuCell.swift in Sources */,
-				A79BDCA4277B17780029DADA /* PVC+CollectionV.swift in Sources */,
-				A79BDCA2277B129D0029DADA /* PVC+EX.swift in Sources */,
+				A757A01B277C449800465551 /* LogoCVCell.swift in Sources */,
+				A79BDCA4277B17780029DADA /* Search+CollectionV.swift in Sources */,
+				A757A019277C445700465551 /* LogoTVCell.swift in Sources */,
+				A79BDCA2277B129D0029DADA /* Search+EX.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -549,6 +581,14 @@
 				minimumVersion = 8.0.0;
 			};
 		};
+		A79BDCB0277B49DF0029DADA /* XCRemoteSwiftPackageReference "SideMenu" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/jonkykong/SideMenu.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -571,6 +611,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = A783CD7E277755A400D1503B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseFirestore;
+		};
+		A79BDCB1277B49DF0029DADA /* SideMenu */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A79BDCB0277B49DF0029DADA /* XCRemoteSwiftPackageReference "SideMenu" */;
+			productName = SideMenu;
 		};
 /* End XCSwiftPackageProductDependency section */
 

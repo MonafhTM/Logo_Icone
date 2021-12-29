@@ -6,11 +6,11 @@
 
 import UIKit
 
-class PVC: UIViewController , UISearchBarDelegate{
+class SearchVC: UIViewController , UISearchBarDelegate{
     
     @IBOutlet var myCollectionView: UICollectionView!
     @IBOutlet weak var searchBar: UISearchBar!
-    @IBOutlet weak var sideMenuBtn: UIBarButtonItem!
+   // @IBOutlet weak var sideMenuBtn: UIBarButtonItem!
     
     let idApp = "T9K6jZD17uI426YGYi85NRBqb74vc3qikziF9ZFNH7NilYpN62oDwPFl0Z82hCOL"
     var icons_Objects: [Icon] = []
@@ -22,15 +22,14 @@ class PVC: UIViewController , UISearchBarDelegate{
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        sideMenuBtn.target = self.revealViewController()
-        sideMenuBtn.action = #selector(self.revealViewController()?.revealSideMenu)
-        
+//        sideMenuBtn.target = self.revealViewController()
+//        sideMenuBtn.action = #selector(self.revealViewController()?.revealSideMenu)
+//
         searchBar.delegate = self
         myCollectionView.delegate = self
         myCollectionView.dataSource = self
         
     }
-
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         
         let nameOfTheSerach = ""
