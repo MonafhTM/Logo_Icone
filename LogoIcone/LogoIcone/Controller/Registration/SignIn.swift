@@ -12,7 +12,7 @@ import FirebaseFirestore
 class SignIn : UIViewController {
     
     //    TextField For Sign in ......
-
+    
     @IBOutlet weak var email: UITextField!
     @IBOutlet weak var password: UITextField!
     
@@ -28,9 +28,9 @@ class SignIn : UIViewController {
         email.placeholder = "Your Email "
         passwordLBL.text = "Password"
         password.placeholder = "Enter password"
-        
-        UserApi.getUser(uid: Auth.auth().currentUser?.uid ?? "") { user in
-        }
+        //
+        //        UserApi.getUser(uid: Auth.auth().currentUser?.uid ?? "") { user in
+        //        }
     }
     
     func SignIn(email: String,password:String) {
@@ -38,6 +38,8 @@ class SignIn : UIViewController {
         Auth.auth().signIn(withEmail: email, password: password) { [weak self] authResult, error in
             
             if let error = error {
+                
+                self?.showAlart(titale: "Error", masge: "error is \((error.localizedDescription)) ")
                 print(error.localizedDescription)
             }
             if authResult?.user.email != nil {
@@ -45,25 +47,28 @@ class SignIn : UIViewController {
             }
             print("email:\(String(describing: authResult?.user.email))")
             print("uid:\(String(describing: authResult?.user.uid))")
-            // ...
-            let vc = self?.storyboard?.instantiateViewController(identifier: "saveProfile") as! ProfileTVC
-            vc.modalPresentationStyle = .fullScreen
-            self?.present(vc, animated: true, completion: nil)
+            self?.dismiss(animated: true, completion: nil)
+            self?.performSegue(withIdentifier: "ShowSearch", sender: nil)
+            
         }
     }
     
     @IBAction func signInButt(_ sender: Any) {
-
+        
         
         SignIn(email: email.text ?? "", password: password.text ?? "")
-
+        
     }
     
     @IBAction func SignUp(_ sender: Any) {
+        self.performSegue(withIdentifier: "toSignUp", sender: nil)
         
-        let vc = storyboard?.instantiateViewController(identifier: "SignUpViewController") as! SignUp
-        vc.modalPresentationStyle = .fullScreen
-        present(vc, animated: true, completion: nil)
+    }
+    func showAlart(titale : String , masge : String) {
+        let alart = UIAlertController(title: titale, message: masge, preferredStyle: .alert)
+        let OK = UIAlertAction(title: "OK", style: .default, handler: nil)
+        alart.addAction(OK)
+        present(alart, animated: true , completion: nil)
         
     }
 }

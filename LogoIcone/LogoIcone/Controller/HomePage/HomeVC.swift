@@ -25,13 +25,15 @@ class HomeVC: UIPageViewController ,UIPageViewControllerDelegate, UIPageViewCont
     fileprivate func pageMoveAndDescription() {
         let firstVC = self.storyboard?.instantiateViewController(withIdentifier: "firstPage") as! HomePageVC
         
-        firstVC.pageTitle = " ICON "
+        firstVC.pageTitle = "ICON".localized
         firstVC.pageInfo = "free vector icons in one place. Download all the free icons in SVG and PNG formats . Use them for web design , mobile apps "
+        firstVC.imageShow = UIImage(named: "HomeImage")
         //
         let secondVC = self.storyboard?.instantiateViewController(withIdentifier: "firstPage") as! HomePageVC
         
         secondVC.pageTitle = "LOGO"
         secondVC.pageInfo = "IF YOU Find Yourself short on logo Ideas , Explore Our  Logo template TO Find What You Need. "
+        secondVC.imageShow =  UIImage(named: "HomeImage1")
         
         arryInformaition.append(firstVC)
         arryInformaition.append(secondVC)

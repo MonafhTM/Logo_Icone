@@ -13,8 +13,6 @@ class LogoCVCell: UICollectionViewCell {
     
     @IBOutlet weak var imageCollection: UIImageView!
     
-    
-    
     @IBAction func save(_ sender: Any) {
     }
     

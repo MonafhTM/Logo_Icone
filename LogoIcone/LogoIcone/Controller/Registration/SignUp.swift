@@ -45,10 +45,8 @@ class SignUp: UIViewController {
                 print(error)
             }else {
                 UserApi.addUser(password: password, uid: authResult?.user.uid ?? "", email: email)
-                
-                let vc = self.storyboard?.instantiateViewController(identifier: "CreateProfileVC") as! CreateProfileVC
-                vc.modalPresentationStyle = .fullScreen
-                self.present(vc, animated: true, completion: nil)
+                self.performSegue(withIdentifier: "toSignupDetals", sender: nil)
+
             }
             
         }

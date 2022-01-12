@@ -5,7 +5,11 @@
 //  Created by Monafh on 22/05/1443 AH.
 
 import Foundation
+import FirebaseAuth
+import FirebaseFirestore
 import UIKit
+
+// *
 
 class User {
     
@@ -20,6 +24,9 @@ class User {
     var imageProfile : String?
     
 }
+
+//*
+
 extension User {
     
     //
@@ -33,6 +40,7 @@ extension User {
         return user
     }
     //
+    
     static func getProfile(dict: [String: Any]) -> User {
         
         let user = User()
@@ -43,10 +51,14 @@ extension User {
         user.bio = dict["bio"] as? String
         user.age = dict["age"] as? Int
         user.gender = dict["gender"] as? String
+        user.imageProfile = dict["imageProfile"] as? String
         
         return user
     }
     //
+    
+    
+    
     static func CreateUser(password:String,email:String) -> [String: Any] {
         
         //        dection....
@@ -69,10 +81,17 @@ extension User {
             "lastName" : lastName,
             "bio" : bio ,
             "age" : age ,
-            "gender" : gender
+            "gender" : gender,
         ] as [String : Any]
         
         return uesrProfile
+    }
+    
+    //     **** ??/
+    
+    static func putImagePofile(imageProfile : String) -> [String: Any]{
+        let newUser = ["imageProfile": imageProfile] as [String: Any]
+        return newUser
     }
     
 }

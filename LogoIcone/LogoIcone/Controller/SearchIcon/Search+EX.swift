@@ -33,8 +33,7 @@ extension SearchVC {
             //  Read HTTP Response Status code
             if let response = response as? HTTPURLResponse {
                 print("Response HTTP Status code: \(response.statusCode)")
-                //                print("Response HTTP Status code: \(response.description)")
-                
+             
             }
             //  Convert HTTP Response Data to a simple String or to specific struct
             if let data = data, let icons = try? JSONDecoder().decode(Welcome.self, from: data) {
@@ -54,6 +53,7 @@ extension SearchVC {
     func getData(from url: URL, completion: @escaping (Data?, URLResponse?, Error?) -> ()) {
         URLSession.shared.dataTask(with: url, completionHandler: completion).resume()
     }
+    
     func downloadImage(imageView:UIImageView,from url: URL) {
         print("Download Started")
         getData(from: url) { data, response, error in

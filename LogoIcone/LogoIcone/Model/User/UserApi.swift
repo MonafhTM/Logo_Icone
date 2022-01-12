@@ -8,6 +8,11 @@
 import Foundation
 import FirebaseFirestore
 import FirebaseAuth
+import FirebaseFirestoreSwift
+import FirebaseStorage
+import FirebaseStorageSwift
+import UIKit
+
 
 class UserApi {
     
@@ -23,14 +28,8 @@ class UserApi {
         
         let refProfile = Firestore.firestore().collection("Users")
         
-        refProfile.document(uid).setData( User.CreateProfile(userName:userName,firstName:firstName, lastName: lastName, bio: bio, age: age, gender: gender) , completion: { error in
-            
-            if let error = error {
-                print(error)
-            } else {
-                completion(true)
-            }
-        })
+        refProfile.document(uid).setData( User.CreateProfile(userName:userName,firstName:firstName, lastName: lastName, bio: bio, age: age, gender: gender) , merge: true )
+        completion(true)
     }
     
     static func getUser(uid:String,completion: @escaping (User) -> Void) {
@@ -58,4 +57,11 @@ class UserApi {
         }
     }
     
+    
+    static func addImageProfile(uid:String,url:String) {
+        let refUsers = Firestore.firestore().collection("Users")
+        refUsers.document(uid).setData(User.putImagePofile(imageProfile: url), merge: true)
+        
+    }
 }
+

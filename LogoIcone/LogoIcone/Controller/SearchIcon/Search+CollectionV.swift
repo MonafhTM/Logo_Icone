@@ -40,6 +40,7 @@ extension SearchVC: UICollectionViewDelegateFlowLayout,UICollectionViewDataSourc
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         print("DDDD")
     }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let vc = segue.destination as? DownloadViewController
         vc?.selectedIcon = icons_Objects[selectedIndex]

@@ -14,6 +14,7 @@ class HomePageVC: UIViewController {
     
     var pageTitle : String?
     var pageInfo : String?
+    var imageShow : UIImage?
     
     
     override func viewDidLoad() {
@@ -30,26 +31,22 @@ class HomePageVC: UIViewController {
             infoTitle.text = description
             
         }
+        if let image = imageShow {
+            imageView.image = image
+        }
     }
     
     @IBAction func startButt(_ sender: Any) {
         
         performSegue(withIdentifier: "side", sender: nil)
-//        let vc = storyboard?.instantiateViewController(identifier: "MainViewController") as! MainViewController
-//        vc.modalPresentationStyle = .fullScreen
-//        present(vc, animated: true, completion: nil)
-        
+     
     }
     
     @IBAction func registrationButt(_ sender: Any) {
         
         
-//        performSegue(withIdentifier: "SignInVC", sender: nil)
+        performSegue(withIdentifier: "RegistrationVC", sender: nil)
         
-        let vc = storyboard?.instantiateViewController(identifier: "SignInVC") as! SignIn
-        vc.modalPresentationStyle = .fullScreen
-        present(vc, animated: true, completion: nil)
-//
     }
 }
 

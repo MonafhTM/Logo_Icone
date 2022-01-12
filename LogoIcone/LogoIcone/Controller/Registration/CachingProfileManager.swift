@@ -19,17 +19,17 @@ class CachingProfileManager {
         return decumentsDirectory.appendingPathComponent(key)
     }
     
-    func setImageFromCach(_ image: UIImage, forKey key: String){
-        cache.setObject(image, forKey: key as NSString)
-        // Create full URL for image
-        
-        let url = imageURL(forKey: key)
-        // Turn image into JPEG data
-        if let data = image.jpegData(compressionQuality: 0.5) {
-            // Write it to full URL
-            try? data.write(to: url)
-        }
-    }
+//    func setImageFromCach(_ image: UIImage, forKey key: String){
+//        cache.setObject(image, forKey: key as NSString)
+//        // Create full URL for image
+//        
+//        let url = imageURL(forKey: key)
+//        // Turn image into JPEG data
+//        if let data = image.jpegData(compressionQuality: 0.5) {
+//            // Write it to full URL
+//            try? data.write(to: url)
+//        }
+//    }
     func getImage(forKey key: String) -> UIImage?{
         if let existingImage = cache.object(forKey: key as NSString){
             return existingImage

@@ -1,0 +1,246 @@
+
+/* Class = "UILabel"; text = "."; ObjectID = "1MD-9z-NXv"; */
+"1MD-9z-NXv.text" = ".";
+
+/* Class = "UILabel"; text = "."; ObjectID = "1VZ-x0-NEU"; */
+"1VZ-x0-NEU.text" = ".";
+
+/* Class = "UITableViewSection"; headerTitle = "Age"; ObjectID = "28E-QF-vpV"; */
+"28E-QF-vpV.headerTitle" = "Age";
+
+/* Class = "UILabel"; text = "Profile"; ObjectID = "2PA-5q-kKT"; */
+"2PA-5q-kKT.text" = "Profile";
+
+/* Class = "UIBarButtonItem"; title = "Item"; ObjectID = "3sx-V0-V78"; */
+"3sx-V0-V78.title" = "Item";
+
+/* Class = "UILabel"; text = "."; ObjectID = "5Cr-Hd-pqI"; */
+"5Cr-Hd-pqI.text" = ".";
+
+/* Class = "UILabel"; text = "."; ObjectID = "7Pa-1a-oqU"; */
+"7Pa-1a-oqU.text" = ".";
+
+/* Class = "UILabel"; text = "."; ObjectID = "8T2-cc-mta"; */
+"8T2-cc-mta.text" = ".";
+
+/* Class = "UITableViewSection"; headerTitle = "Profile"; ObjectID = "8ZV-E4-eq7"; */
+"8ZV-E4-eq7.headerTitle" = "Profile";
+
+/* Class = "UINavigationItem"; title = "Video"; ObjectID = "8b2-1Y-ctf"; */
+"8b2-1Y-ctf.title" = "Video";
+
+/* Class = "UILabel"; text = "."; ObjectID = "8lZ-zI-QHj"; */
+"8lZ-zI-QHj.text" = ".";
+
+/* Class = "UIButton"; configuration.title = "Sign in with Google"; ObjectID = "AWO-eB-Q26"; */
+"AWO-eB-Q26.configuration.title" = "Sign in with Google";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "AWO-eB-Q26"; */
+"AWO-eB-Q26.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "."; ObjectID = "CLt-qz-BMk"; */
+"CLt-qz-BMk.text" = ".";
+
+/* Class = "UILabel"; text = "."; ObjectID = "D6W-l9-TGK"; */
+"D6W-l9-TGK.text" = ".";
+
+/* Class = "UIButton"; configuration.title = "Start"; ObjectID = "FeA-3b-AwE"; */
+"FeA-3b-AwE.configuration.title" = "Start";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "FeA-3b-AwE"; */
+"FeA-3b-AwE.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "."; ObjectID = "G32-EE-6eT"; */
+"G32-EE-6eT.text" = ".";
+
+/* Class = "UIButton"; configuration.title = "SignUp"; ObjectID = "GEo-ky-Row"; */
+"GEo-ky-Row.configuration.title" = "SignUp";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "GEo-ky-Row"; */
+"GEo-ky-Row.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "SignUp"; ObjectID = "ISl-Od-Wxw"; */
+"ISl-Od-Wxw.configuration.title" = "SignUp";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "ISl-Od-Wxw"; */
+"ISl-Od-Wxw.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "."; ObjectID = "Lht-zk-Qk7"; */
+"Lht-zk-Qk7.text" = ".";
+
+/* Class = "UIButton"; configuration.title = "Registration"; ObjectID = "OKO-72-E7B"; */
+"OKO-72-E7B.configuration.title" = "Registration";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "OKO-72-E7B"; */
+"OKO-72-E7B.normalTitle" = "Button";
+
+/* Class = "UITableViewSection"; headerTitle = "UserName"; ObjectID = "P7g-Wg-iiX"; */
+"P7g-Wg-iiX.headerTitle" = "UserName";
+
+/* Class = "UITextField"; placeholder = "Add your comment "; ObjectID = "Qbj-ls-zgR"; */
+"Qbj-ls-zgR.placeholder" = "Add your comment ";
+
+/* Class = "UIBarButtonItem"; title = "SignOut"; ObjectID = "RwE-8p-CVQ"; */
+"RwE-8p-CVQ.title" = "SignOut";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "Sfg-vx-8XY"; */
+"Sfg-vx-8XY.text" = "Label";
+
+/* Class = "UILabel"; text = "."; ObjectID = "T11-7f-rO1"; */
+"T11-7f-rO1.text" = ".";
+
+/* Class = "UILabel"; text = "."; ObjectID = "TEh-qn-LBA"; */
+"TEh-qn-LBA.text" = ".";
+
+/* Class = "UILabel"; text = "........."; ObjectID = "U1h-PB-g89"; */
+"U1h-PB-g89.text" = ".........";
+
+/* Class = "UILabel"; text = "Logo"; ObjectID = "Ub5-wu-puT"; */
+"Ub5-wu-puT.text" = "Logo";
+
+/* Class = "UIButton"; configuration.title = "SignIn"; ObjectID = "XZf-13-fj2"; */
+"XZf-13-fj2.configuration.title" = "SignIn";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "XZf-13-fj2"; */
+"XZf-13-fj2.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "."; ObjectID = "a3H-Da-XKO"; */
+"a3H-Da-XKO.text" = ".";
+
+/* Class = "UINavigationController"; title = "Video overview"; ObjectID = "ago-fH-OVX"; */
+"ago-fH-OVX.title" = "Video overview";
+
+/* Class = "UIButton"; configuration.title = "Photo"; ObjectID = "bGu-Tl-hdV"; */
+"bGu-Tl-hdV.configuration.title" = "Photo";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "bGu-Tl-hdV"; */
+"bGu-Tl-hdV.normalTitle" = "Button";
+
+/* Class = "UITabBarItem"; title = "Public"; ObjectID = "c47-aS-0F2"; */
+"c47-aS-0F2.title" = "Public";
+
+/* Class = "UILabel"; text = "."; ObjectID = "fad-yG-jyn"; */
+"fad-yG-jyn.text" = ".";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "fao-e9-Cz5"; */
+"fao-e9-Cz5.text" = "Label";
+
+/* Class = "UIBarButtonItem"; title = "Search"; ObjectID = "fmK-jO-7Rn"; */
+"fmK-jO-7Rn.title" = "Search";
+
+/* Class = "UILabel"; text = "."; ObjectID = "gIa-Dz-Ieb"; */
+"gIa-Dz-Ieb.text" = ".";
+
+/* Class = "UINavigationItem"; title = "Profile"; ObjectID = "gaw-GF-5gn"; */
+"gaw-GF-5gn.title" = "Profile";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "hl9-oA-DEb"; */
+"hl9-oA-DEb.text" = "Label";
+
+/* Class = "UITableViewSection"; headerTitle = "Gender"; ObjectID = "iCc-tQ-Kv6"; */
+"iCc-tQ-Kv6.headerTitle" = "Gender";
+
+/* Class = "UIButton"; configuration.title = "comment"; ObjectID = "iga-Dp-3t7"; */
+"iga-Dp-3t7.configuration.title" = "comment";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "iga-Dp-3t7"; */
+"iga-Dp-3t7.normalTitle" = "Button";
+
+/* Class = "UITabBarItem"; title = "Favorite"; ObjectID = "it0-VQ-rKn"; */
+"it0-VQ-rKn.title" = "Favorite";
+
+/* Class = "UITableViewSection"; headerTitle = "Bio"; ObjectID = "kOD-7N-gGt"; */
+"kOD-7N-gGt.headerTitle" = "Bio";
+
+/* Class = "UIBarButtonItem"; title = "Item"; ObjectID = "l6r-Gh-cAK"; */
+"l6r-Gh-cAK.title" = "Item";
+
+/* Class = "UILabel"; text = "."; ObjectID = "mLa-tu-8ft"; */
+"mLa-tu-8ft.text" = ".";
+
+/* Class = "UIButton"; configuration.title = "Button"; ObjectID = "mzY-UJ-Zvi"; */
+"mzY-UJ-Zvi.configuration.title" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "mzY-UJ-Zvi"; */
+"mzY-UJ-Zvi.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "."; ObjectID = "nJF-2K-Wrm"; */
+"nJF-2K-Wrm.text" = ".";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "nbI-g5-4kR"; */
+"nbI-g5-4kR.text" = "Label";
+
+/* Class = "UILabel"; text = "Comment"; ObjectID = "o1i-dA-GuP"; */
+"o1i-dA-GuP.text" = "Comment";
+
+/* Class = "UILabel"; text = "........."; ObjectID = "ogY-jS-8ze"; */
+"ogY-jS-8ze.text" = ".........";
+
+/* Class = "UIButton"; configuration.title = "Edit Profile"; ObjectID = "ogk-pW-nst"; */
+"ogk-pW-nst.configuration.title" = "Edit Profile";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "ogk-pW-nst"; */
+"ogk-pW-nst.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "save"; ObjectID = "par-u0-uf4"; */
+"par-u0-uf4.configuration.title" = "save";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "par-u0-uf4"; */
+"par-u0-uf4.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "."; ObjectID = "q1C-sj-IKw"; */
+"q1C-sj-IKw.text" = ".";
+
+/* Class = "UINavigationItem"; title = "Search"; ObjectID = "r87-pv-S9m"; */
+"r87-pv-S9m.title" = "Search";
+
+/* Class = "UILabel"; text = "Search Icon"; ObjectID = "rbN-TL-qKr"; */
+"rbN-TL-qKr.text" = "Search Icon";
+
+/* Class = "UILabel"; text = "comment"; ObjectID = "rn8-wa-WKg"; */
+"rn8-wa-WKg.text" = "comment";
+
+/* Class = "UIBarButtonItem"; title = "Item"; ObjectID = "seG-cC-08x"; */
+"seG-cC-08x.title" = "Item";
+
+/* Class = "UILabel"; text = "."; ObjectID = "tFa-VB-Ldh"; */
+"tFa-VB-Ldh.text" = ".";
+
+/* Class = "UILabel"; text = "Name"; ObjectID = "tRa-ue-zVN"; */
+"tRa-ue-zVN.text" = "Name";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "tdY-LH-rde"; */
+"tdY-LH-rde.text" = "Label";
+
+/* Class = "UILabel"; text = "."; ObjectID = "teW-JZ-pik"; */
+"teW-JZ-pik.text" = ".";
+
+/* Class = "UIBarButtonItem"; title = "Item"; ObjectID = "tlO-Fr-08A"; */
+"tlO-Fr-08A.title" = "Item";
+
+/* Class = "UIButton"; configuration.title = "Details"; ObjectID = "uSW-Md-nWm"; */
+"uSW-Md-nWm.configuration.title" = "Details";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "uSW-Md-nWm"; */
+"uSW-Md-nWm.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "Save"; ObjectID = "umG-vg-tn3"; */
+"umG-vg-tn3.configuration.title" = "Save";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "umG-vg-tn3"; */
+"umG-vg-tn3.normalTitle" = "Button";
+
+/* Class = "UINavigationItem"; title = "Root View Controller"; ObjectID = "wAl-cf-HvD"; */
+"wAl-cf-HvD.title" = "Root View Controller";
+
+/* Class = "UILabel"; text = "Video"; ObjectID = "wJ0-ov-0eN"; */
+"wJ0-ov-0eN.text" = "Video";
+
+/* Class = "UILabel"; text = "______________ OR ______________"; ObjectID = "yRd-zf-mwu"; */
+"yRd-zf-mwu.text" = "______________ OR ______________";
+
+/* Class = "UILabel"; text = "."; ObjectID = "zTg-n6-Qet"; */
+"zTg-n6-Qet.text" = ".";
+
+/* Class = "UINavigationItem"; title = "secand"; ObjectID = "zUi-V7-IBP"; */
+"zUi-V7-IBP.title" = "secand";

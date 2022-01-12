@@ -7,19 +7,21 @@
 
 import UIKit
 
-class LogoTVCell: UITableViewCell, UICollectionViewDelegate, UICollectionViewDataSource {
+class LogoTVCell: UITableViewCell {
 
+    var brands : [Brandfetch] = []
     
-    @IBOutlet weak var titleLB: UILabel!
-    @IBOutlet weak var collectionView: UICollectionView!
-    
-    var title = ""
-    var arr = []
+    @IBOutlet weak var nameBrandsLBL: UILabel!
+    @IBOutlet weak var firstLogoBrands: UIImageView!
+    @IBOutlet weak var secondLogoBrands: UIImageView!
+    @IBOutlet weak var titelLBL: UILabel!
+    @IBOutlet weak var descriptionLBL: UILabel!
     
 
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        titelLBL.text = "Description"
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -27,16 +29,4 @@ class LogoTVCell: UITableViewCell, UICollectionViewDelegate, UICollectionViewDat
 
         // Configure the view for the selected state
     }
-    
-    
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        <#code#>
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        <#code#>
-    }
-    
-    
-
 }
