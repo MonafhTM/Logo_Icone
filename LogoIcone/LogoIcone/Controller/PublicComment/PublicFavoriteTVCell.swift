@@ -16,10 +16,15 @@ class PublicFavoriteTVCell: UITableViewCell {
     @IBOutlet weak var iconeLikePublic: UIImageView!
     @IBOutlet weak var commentLBL: UILabel!
     
+    @IBOutlet weak var backgroundImage: UIImageView!
+    
+    
     
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        
+        backgroundImage.image = UIImage(named: "CommentAny")
         
         imageUserPublic.image = nil
         userNamePublic.text = ""

@@ -26,17 +26,16 @@ extension SearchVC: UICollectionViewDelegateFlowLayout,UICollectionViewDataSourc
         
         return cell
     }
+    
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
         iconFormatElement = icons_Objects[indexPath.row].rasterSizes[8].formats[0]
         
         selectedIndex = indexPath.row
-//        let vc = storyboard?.instantiateViewController(identifier: "MainViewController") as! DownloadViewController
-//        vc.modalPresentationStyle = .fullScreen
-//        present(vc, animated: true, completion: nil)
         performSegue(withIdentifier: "toDetals", sender: collectionView.cellForItem(at: indexPath))
         
     }
+    
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         print("DDDD")
     }
@@ -47,6 +46,7 @@ extension SearchVC: UICollectionViewDelegateFlowLayout,UICollectionViewDataSourc
         vc?.iconFormatElement = iconFormatElement
         
     }
+    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: collectionView.frame.width/4  , height: collectionView.frame.height/4   )
     }

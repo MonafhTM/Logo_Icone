@@ -33,7 +33,7 @@ extension SearchVC {
             //  Read HTTP Response Status code
             if let response = response as? HTTPURLResponse {
                 print("Response HTTP Status code: \(response.statusCode)")
-             
+                
             }
             //  Convert HTTP Response Data to a simple String or to specific struct
             if let data = data, let icons = try? JSONDecoder().decode(Welcome.self, from: data) {

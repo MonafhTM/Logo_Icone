@@ -23,10 +23,15 @@ class DownloadViewController: UIViewController , UIImagePickerControllerDelegate
     @IBOutlet weak var commentLBL: UILabel!
     @IBOutlet weak var commentText: UITextField!
     @IBOutlet weak var iconTopic: UILabel!
+    @IBOutlet weak var commentImage: UIImageView!
+    @IBOutlet weak var ViewIcon: UIView!
     
     var url: URL?
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        ViewIcon.layer.cornerRadius = ViewIcon.bounds.width / 2
+        
         
         seticonFormatElement = iconFormatElement
         guard let url = URL(string: seticonFormatElement?.previewURL ?? "") else { return }
@@ -34,9 +39,10 @@ class DownloadViewController: UIViewController , UIImagePickerControllerDelegate
         downloadImage(imageView: showIcon, from: url)
         iconNameLabel.text = selectedIcon.tags.first
         
+        commentImage.image = UIImage(named: "CommentAny")
+        
         iconTopic.text = "Topic :"
         
-        inforUrl()
     }
     // MARK: - simple Request ....
     
@@ -130,36 +136,15 @@ class DownloadViewController: UIViewController , UIImagePickerControllerDelegate
     //       step 1
     
     @IBAction func addComment(_ sender: Any) {
-        //      letif empte show alert ....
+        //      letif empte show alert ....            ***********************
         
-        CommentApi.setComment(uid: Auth.auth().currentUser?.uid ?? "", commentText: commentText.text ?? "" , image: url!.absoluteString)
+        UserApi.getProfile(uid: Auth.auth().currentUser?.uid ?? "" , completion: { user in
+            
+            CommentApi.setComment(uid:  Auth.auth().currentUser?.uid ?? "", commentText: self.commentText.text ?? "", image: self.url!.absoluteString, imageUser: user.imageProfile ?? "", userName: user.userName ?? "")
+            
+            self.performSegue(withIdentifier: "showComment", sender: nil )
+        })
         
-//        let comment = Favorite(comment: commentText.text!)
-//        print(comment.comment)
-        
-        performSegue(withIdentifier: "showComment", sender: nil )
-        
-        
-        //        chooes name for noti , send notiv
-        //NotificationCenter.default.post(name: NSNotification.Name(rawValue: "NewFavoriteAdded"), object: nil, userInfo: ["addedFavorite": comment])
     }
 }
-
-
-
-// XXXXX
-
-fileprivate func inforUrl() {
-    //        for tag in selectedIcon.tags {
-    ////            iconTagLabel.text?.append(" \(tag)")
-    //        }
-    //        for size in selectedIcon.vectorSizes {
-    //            for siz in size.targetSizes{
-    //                for si in siz {
-    ////                    resterSizes.text?.append(" \(si)")
-    //                }
-    //            }
-    //        }
-}
-
 

@@ -1,7 +1,7 @@
 {
   "images" : [
     {
-      "filename" : "LaunchScreen.png",
+      "filename" : "color.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
@@ -12,7 +12,7 @@
           "value" : "dark"
         }
       ],
-      "filename" : "LaunchScreen-1.png",
+      "filename" : "BouttenDark.png",
       "idiom" : "universal",
       "scale" : "1x"
     },

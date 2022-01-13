@@ -39,6 +39,20 @@ extension User {
         
         return user
     }
+    // For comment .....
+    
+    static func getUserCommentInfo(dict: [String: Any]) -> User {
+        
+        let user = User()
+        
+        user.userName = dict["userName"] as? String
+        user.imageProfile = dict["imageProfile"] as? String
+        
+        return user
+    }
+    
+    
+    
     //
     
     static func getProfile(dict: [String: Any]) -> User {

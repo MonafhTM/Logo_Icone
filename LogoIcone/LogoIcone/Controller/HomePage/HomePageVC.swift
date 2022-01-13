@@ -8,7 +8,9 @@ import UIKit
 
 class HomePageVC: UIViewController {
     
-    @IBOutlet weak var imageView: UIImageView!
+    //  objects That used and define the avribles ...
+    
+    @IBOutlet weak var symbolImage: UIImageView!
     @IBOutlet weak var titleLBL: UILabel!
     @IBOutlet weak var infoTitle: UILabel!
     
@@ -16,36 +18,47 @@ class HomePageVC: UIViewController {
     var pageInfo : String?
     var imageShow : UIImage?
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        imageView.image = UIImage(named: "HomeImage")
-        //         Home Screen
+        symbolImage.image = UIImage(named: "HomeImage")
+        symbolImage.layer.cornerRadius = 20
+        symbolImage.layer.borderWidth = 0.20
+        
+        setHomePageVaribles()
+    }
+    
+    //    set the Objects to the varibles
+    
+    fileprivate func setHomePageVaribles() {
+        
         if let titel = pageTitle {
             titleLBL.text = titel
-            
         }
         
         if let description = pageInfo {
             infoTitle.text = description
-            
         }
+        
         if let image = imageShow {
-            imageView.image = image
+            symbolImage.image = image
         }
     }
     
+    // Boutten move to the First section in App (SearchIcon) ....
+    
     @IBAction func startButt(_ sender: Any) {
         
-        performSegue(withIdentifier: "side", sender: nil)
-     
+        performSegue(withIdentifier: "SearchIconSegue", sender: nil)
+        
     }
+    
+    //  Boutten move to the Registration, SignIn   ....
     
     @IBAction func registrationButt(_ sender: Any) {
         
         
-        performSegue(withIdentifier: "RegistrationVC", sender: nil)
+        performSegue(withIdentifier: "RegistrationVCSegue", sender: nil)
         
     }
 }

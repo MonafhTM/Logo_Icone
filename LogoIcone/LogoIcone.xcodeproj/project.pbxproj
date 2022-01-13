@@ -119,6 +119,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A735D119278EBC4300E7D595 /* Comment */ = {
+			isa = PBXGroup;
+			children = (
+				A7CF99DF278C48A10080996C /* Comment.swift */,
+				A7CF99DD278C3F710080996C /* CommentApi.swift */,
+			);
+			path = Comment;
+			sourceTree = "<group>";
+		};
+		A735D11A2790A01D00E7D595 /* API-Struct */ = {
+			isa = PBXGroup;
+			children = (
+				A778889D27787F610034E303 /* Icons.swift */,
+				A7CF99D2278B07710080996C /* Brandfetch.swift */,
+			);
+			path = "API-Struct";
+			sourceTree = "<group>";
+		};
 		A757A015277C0B2000465551 /* Logo */ = {
 			isa = PBXGroup;
 			children = (
@@ -185,10 +203,8 @@
 			isa = PBXGroup;
 			children = (
 				A7CF99E5278C5F7B0080996C /* User */,
-				A778889D27787F610034E303 /* Icons.swift */,
-				A7CF99D2278B07710080996C /* Brandfetch.swift */,
-				A7CF99DD278C3F710080996C /* CommentApi.swift */,
-				A7CF99DF278C48A10080996C /* Comment.swift */,
+				A735D119278EBC4300E7D595 /* Comment */,
+				A735D11A2790A01D00E7D595 /* API-Struct */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -216,7 +232,7 @@
 				A778887C2777C6EF0034E303 /* SideMenu */,
 				A79BDC9D277AE9630029DADA /* SearchIcon */,
 				A79BDCA7277B1AA20029DADA /* DownloadVC */,
-				A7CF99E4278C5EF20080996C /* PrivatComment */,
+				A7CF99E4278C5EF20080996C /* UserComment */,
 				A7CF99E3278C5EEC0080996C /* PublicComment */,
 			);
 			path = Controller;
@@ -274,13 +290,13 @@
 			path = PublicComment;
 			sourceTree = "<group>";
 		};
-		A7CF99E4278C5EF20080996C /* PrivatComment */ = {
+		A7CF99E4278C5EF20080996C /* UserComment */ = {
 			isa = PBXGroup;
 			children = (
 				A7A2EA28278614CB00F01CBD /* FavoriteVC.swift */,
 				A7A2EA2A27862A6100F01CBD /* FavoriteTVCell.swift */,
 			);
-			path = PrivatComment;
+			path = UserComment;
 			sourceTree = "<group>";
 		};
 		A7CF99E5278C5F7B0080996C /* User */ = {
