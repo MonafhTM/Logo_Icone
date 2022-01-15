@@ -6,10 +6,10 @@
 "1VZ-x0-NEU.text" = ".";
 
 /* Class = "UITableViewSection"; headerTitle = "Age"; ObjectID = "28E-QF-vpV"; */
-"28E-QF-vpV.headerTitle" = "Age";
+"28E-QF-vpV.headerTitle" = "العمر";
 
 /* Class = "UILabel"; text = "Profile"; ObjectID = "2PA-5q-kKT"; */
-"2PA-5q-kKT.text" = "Profile";
+"2PA-5q-kKT.text" = "الملف الشخصي";
 
 /* Class = "UIBarButtonItem"; title = "Item"; ObjectID = "3sx-V0-V78"; */
 "3sx-V0-V78.title" = "Item";
@@ -24,16 +24,16 @@
 "8T2-cc-mta.text" = ".";
 
 /* Class = "UITableViewSection"; headerTitle = "Profile"; ObjectID = "8ZV-E4-eq7"; */
-"8ZV-E4-eq7.headerTitle" = "Profile";
+"8ZV-E4-eq7.headerTitle" = "الملف الشخصي";
 
 /* Class = "UINavigationItem"; title = "Video"; ObjectID = "8b2-1Y-ctf"; */
-"8b2-1Y-ctf.title" = "Video";
+"8b2-1Y-ctf.title" = "مقطع فديو";
 
 /* Class = "UILabel"; text = "."; ObjectID = "8lZ-zI-QHj"; */
 "8lZ-zI-QHj.text" = ".";
 
 /* Class = "UIButton"; configuration.title = "Sign in with Google"; ObjectID = "AWO-eB-Q26"; */
-"AWO-eB-Q26.configuration.title" = "Sign in with Google";
+"AWO-eB-Q26.configuration.title" = "الدخول بحساب Google";
 
 /* Class = "UIButton"; normalTitle = "Button"; ObjectID = "AWO-eB-Q26"; */
 "AWO-eB-Q26.normalTitle" = "Button";
@@ -45,7 +45,7 @@
 "D6W-l9-TGK.text" = ".";
 
 /* Class = "UIButton"; configuration.title = "Start"; ObjectID = "FeA-3b-AwE"; */
-"FeA-3b-AwE.configuration.title" = "Start";
+"FeA-3b-AwE.configuration.title" = "أبدا";
 
 /* Class = "UIButton"; normalTitle = "Button"; ObjectID = "FeA-3b-AwE"; */
 "FeA-3b-AwE.normalTitle" = "Button";
@@ -54,13 +54,13 @@
 "G32-EE-6eT.text" = ".";
 
 /* Class = "UIButton"; configuration.title = "SignUp"; ObjectID = "GEo-ky-Row"; */
-"GEo-ky-Row.configuration.title" = "SignUp";
+"GEo-ky-Row.configuration.title" = "حساب جديد";
 
 /* Class = "UIButton"; normalTitle = "Button"; ObjectID = "GEo-ky-Row"; */
 "GEo-ky-Row.normalTitle" = "Button";
 
 /* Class = "UIButton"; configuration.title = "SignUp"; ObjectID = "ISl-Od-Wxw"; */
-"ISl-Od-Wxw.configuration.title" = "SignUp";
+"ISl-Od-Wxw.configuration.title" = "حساب جديد";
 
 /* Class = "UIButton"; normalTitle = "Button"; ObjectID = "ISl-Od-Wxw"; */
 "ISl-Od-Wxw.normalTitle" = "Button";
@@ -69,19 +69,19 @@
 "Lht-zk-Qk7.text" = ".";
 
 /* Class = "UIButton"; configuration.title = "Registration"; ObjectID = "OKO-72-E7B"; */
-"OKO-72-E7B.configuration.title" = "Registration";
+"OKO-72-E7B.configuration.title" = "التسجيل";
 
 /* Class = "UIButton"; normalTitle = "Button"; ObjectID = "OKO-72-E7B"; */
 "OKO-72-E7B.normalTitle" = "Button";
 
 /* Class = "UITableViewSection"; headerTitle = "UserName"; ObjectID = "P7g-Wg-iiX"; */
-"P7g-Wg-iiX.headerTitle" = "UserName";
+"P7g-Wg-iiX.headerTitle" = "اسم الحساب";
 
 /* Class = "UITextField"; placeholder = "Add your comment "; ObjectID = "Qbj-ls-zgR"; */
-"Qbj-ls-zgR.placeholder" = "Add your comment ";
+"Qbj-ls-zgR.placeholder" = "اضافة تعليق ";
 
 /* Class = "UIBarButtonItem"; title = "SignOut"; ObjectID = "RwE-8p-CVQ"; */
-"RwE-8p-CVQ.title" = "SignOut";
+"RwE-8p-CVQ.title" = "خروج";
 
 /* Class = "UILabel"; text = "Label"; ObjectID = "Sfg-vx-8XY"; */
 "Sfg-vx-8XY.text" = "Label";
@@ -96,10 +96,10 @@
 "U1h-PB-g89.text" = ".........";
 
 /* Class = "UILabel"; text = "Logo"; ObjectID = "Ub5-wu-puT"; */
-"Ub5-wu-puT.text" = "Logo";
+"Ub5-wu-puT.text" = "شعار";
 
 /* Class = "UIButton"; configuration.title = "SignIn"; ObjectID = "XZf-13-fj2"; */
-"XZf-13-fj2.configuration.title" = "SignIn";
+"XZf-13-fj2.configuration.title" = "الدخول";
 
 /* Class = "UIButton"; normalTitle = "Button"; ObjectID = "XZf-13-fj2"; */
 "XZf-13-fj2.normalTitle" = "Button";
@@ -117,7 +117,7 @@
 "bGu-Tl-hdV.normalTitle" = "Button";
 
 /* Class = "UITabBarItem"; title = "Public"; ObjectID = "c47-aS-0F2"; */
-"c47-aS-0F2.title" = "Public";
+"c47-aS-0F2.title" = "شائع";
 
 /* Class = "UILabel"; text = "."; ObjectID = "fad-yG-jyn"; */
 "fad-yG-jyn.text" = ".";
@@ -126,31 +126,31 @@
 "fao-e9-Cz5.text" = "Label";
 
 /* Class = "UIBarButtonItem"; title = "Search"; ObjectID = "fmK-jO-7Rn"; */
-"fmK-jO-7Rn.title" = "Search";
+"fmK-jO-7Rn.title" = "بحث";
 
 /* Class = "UILabel"; text = "."; ObjectID = "gIa-Dz-Ieb"; */
 "gIa-Dz-Ieb.text" = ".";
 
 /* Class = "UINavigationItem"; title = "Profile"; ObjectID = "gaw-GF-5gn"; */
-"gaw-GF-5gn.title" = "Profile";
+"gaw-GF-5gn.title" = "الملف الشخصي";
 
 /* Class = "UILabel"; text = "Label"; ObjectID = "hl9-oA-DEb"; */
 "hl9-oA-DEb.text" = "Label";
 
 /* Class = "UITableViewSection"; headerTitle = "Gender"; ObjectID = "iCc-tQ-Kv6"; */
-"iCc-tQ-Kv6.headerTitle" = "Gender";
+"iCc-tQ-Kv6.headerTitle" = "التصنيف";
 
 /* Class = "UIButton"; configuration.title = "comment"; ObjectID = "iga-Dp-3t7"; */
-"iga-Dp-3t7.configuration.title" = "comment";
+"iga-Dp-3t7.configuration.title" = "التعليقات";
 
 /* Class = "UIButton"; normalTitle = "Button"; ObjectID = "iga-Dp-3t7"; */
 "iga-Dp-3t7.normalTitle" = "Button";
 
 /* Class = "UITabBarItem"; title = "Favorite"; ObjectID = "it0-VQ-rKn"; */
-"it0-VQ-rKn.title" = "Favorite";
+"it0-VQ-rKn.title" = "المفضلة";
 
 /* Class = "UITableViewSection"; headerTitle = "Bio"; ObjectID = "kOD-7N-gGt"; */
-"kOD-7N-gGt.headerTitle" = "Bio";
+"kOD-7N-gGt.headerTitle" = "الوصف";
 
 /* Class = "UIBarButtonItem"; title = "Item"; ObjectID = "l6r-Gh-cAK"; */
 "l6r-Gh-cAK.title" = "Item";
@@ -171,19 +171,19 @@
 "nbI-g5-4kR.text" = "Label";
 
 /* Class = "UILabel"; text = "Comment"; ObjectID = "o1i-dA-GuP"; */
-"o1i-dA-GuP.text" = "Comment";
+"o1i-dA-GuP.text" = "التعليقات";
 
 /* Class = "UILabel"; text = "........."; ObjectID = "ogY-jS-8ze"; */
 "ogY-jS-8ze.text" = ".........";
 
 /* Class = "UIButton"; configuration.title = "Edit Profile"; ObjectID = "ogk-pW-nst"; */
-"ogk-pW-nst.configuration.title" = "Edit Profile";
+"ogk-pW-nst.configuration.title" = "تحديث";
 
 /* Class = "UIButton"; normalTitle = "Button"; ObjectID = "ogk-pW-nst"; */
 "ogk-pW-nst.normalTitle" = "Button";
 
 /* Class = "UIButton"; configuration.title = "save"; ObjectID = "par-u0-uf4"; */
-"par-u0-uf4.configuration.title" = "save";
+"par-u0-uf4.configuration.title" = "حفظ";
 
 /* Class = "UIButton"; normalTitle = "Button"; ObjectID = "par-u0-uf4"; */
 "par-u0-uf4.normalTitle" = "Button";
@@ -192,13 +192,13 @@
 "q1C-sj-IKw.text" = ".";
 
 /* Class = "UINavigationItem"; title = "Search"; ObjectID = "r87-pv-S9m"; */
-"r87-pv-S9m.title" = "Search";
+"r87-pv-S9m.title" = "البحث";
 
 /* Class = "UILabel"; text = "Search Icon"; ObjectID = "rbN-TL-qKr"; */
-"rbN-TL-qKr.text" = "Search Icon";
+"rbN-TL-qKr.text" = "البحث عن الايقونات";
 
 /* Class = "UILabel"; text = "comment"; ObjectID = "rn8-wa-WKg"; */
-"rn8-wa-WKg.text" = "comment";
+"rn8-wa-WKg.text" = "التعليقات";
 
 /* Class = "UIBarButtonItem"; title = "Item"; ObjectID = "seG-cC-08x"; */
 "seG-cC-08x.title" = "Item";
@@ -207,7 +207,7 @@
 "tFa-VB-Ldh.text" = ".";
 
 /* Class = "UILabel"; text = "Name"; ObjectID = "tRa-ue-zVN"; */
-"tRa-ue-zVN.text" = "Name";
+"tRa-ue-zVN.text" = "الاسم";
 
 /* Class = "UILabel"; text = "Label"; ObjectID = "tdY-LH-rde"; */
 "tdY-LH-rde.text" = "Label";
@@ -219,13 +219,13 @@
 "tlO-Fr-08A.title" = "Item";
 
 /* Class = "UIButton"; configuration.title = "Details"; ObjectID = "uSW-Md-nWm"; */
-"uSW-Md-nWm.configuration.title" = "Details";
+"uSW-Md-nWm.configuration.title" = "معلومات";
 
 /* Class = "UIButton"; normalTitle = "Button"; ObjectID = "uSW-Md-nWm"; */
 "uSW-Md-nWm.normalTitle" = "Button";
 
 /* Class = "UIButton"; configuration.title = "Save"; ObjectID = "umG-vg-tn3"; */
-"umG-vg-tn3.configuration.title" = "Save";
+"umG-vg-tn3.configuration.title" = "حفظ";
 
 /* Class = "UIButton"; normalTitle = "Button"; ObjectID = "umG-vg-tn3"; */
 "umG-vg-tn3.normalTitle" = "Button";
@@ -234,13 +234,13 @@
 "wAl-cf-HvD.title" = "Root View Controller";
 
 /* Class = "UILabel"; text = "Video"; ObjectID = "wJ0-ov-0eN"; */
-"wJ0-ov-0eN.text" = "Video";
+"wJ0-ov-0eN.text" = "مقطع توضيحي";
 
 /* Class = "UILabel"; text = "______________ OR ______________"; ObjectID = "yRd-zf-mwu"; */
-"yRd-zf-mwu.text" = "______________ OR ______________";
+"yRd-zf-mwu.text" = "______________ أو ______________";
 
 /* Class = "UILabel"; text = "."; ObjectID = "zTg-n6-Qet"; */
 "zTg-n6-Qet.text" = ".";
 
 /* Class = "UINavigationItem"; title = "secand"; ObjectID = "zUi-V7-IBP"; */
-"zUi-V7-IBP.title" = "secand";
+"zUi-V7-IBP.title" = "الثاني";

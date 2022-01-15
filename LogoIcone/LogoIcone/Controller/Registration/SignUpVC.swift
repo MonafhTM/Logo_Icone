@@ -9,29 +9,35 @@ import UIKit
 import FirebaseAuth
 import FirebaseFirestore
 
-class SignUp: UIViewController {
+class SignUpVC: UIViewController {
     
+    
+    // MARK: - Outlets
     @IBOutlet weak var emailSignUp: UITextField!
     @IBOutlet weak var password: UITextField!
-    
     @IBOutlet weak var titleLBL: UILabel!
     @IBOutlet weak var emailLBL: UILabel!
-    
     @IBOutlet weak var passwordLBL: UILabel!
     @IBOutlet weak var infoLBL: UILabel!
+    @IBOutlet weak var signUpBackground: UIImageView!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        titleLBL.text = "Sign up to LogoIcon"
-        emailLBL.text = " Email"
-        emailSignUp.placeholder = "Enter your Email"
-        passwordLBL.text = " Password "
-        password.placeholder = "your password"
-        infoLBL.text = "Please create a strong password and at least 8 Characters"
+        titleLBL.text = "Sign up to LogoIcon".localized
+        emailLBL.text = " Email".localized
+        emailSignUp.placeholder = "Enter your Email".localized
+        passwordLBL.text = " Password ".localized
+        password.placeholder = "your password".localized
+        infoLBL.text = "Please create a strong password and at least 8 Characters".localized
+        signUpBackground.image = UIImage(named: "SignUp")
         
     }
+    
+    
+    // MARK: - Custom Methods For SignUp
+    
     func SignUp(email: String,password:String) {
         Auth.auth().createUser(withEmail: email, password: password) { authResult, error in
             
@@ -40,17 +46,19 @@ class SignUp: UIViewController {
             
             if let error = error {
                 
-                self.showAlertWith(title: "Error", message: "Try again")
+                self.showAlertWith(title: "Error".localized, message: "Try again".localized)
                 
                 print(error)
             }else {
                 UserApi.addUser(password: password, uid: authResult?.user.uid ?? "", email: email)
                 self.performSegue(withIdentifier: "toSignupDetals", sender: nil)
-
+                
             }
-            
         }
     }
+    
+    
+    // MARK: - Action Methods
     
     @IBAction func signUpButt(_ sender: Any) {
         
@@ -59,9 +67,12 @@ class SignUp: UIViewController {
         SignUp(email: emailSignUp.text ?? "", password: password.text ?? "")
         
     }
+    
+    // MARK: - Alert message
+    
     func showAlertWith(title: String, message: String){
         let nameOfSerachAlert = UIAlertController(title: title, message: message, preferredStyle: .alert)
-        nameOfSerachAlert.addAction(UIAlertAction(title: "OK", style: .default))
+        nameOfSerachAlert.addAction(UIAlertAction(title: "OK".localized, style: .default))
         present(nameOfSerachAlert, animated: true)
     }
 }

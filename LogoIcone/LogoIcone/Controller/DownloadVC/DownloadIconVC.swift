@@ -11,37 +11,45 @@ import UIKit
 import Firebase
 import FirebaseFirestore
 
-class DownloadViewController: UIViewController , UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class DownloadIconVC: UIViewController , UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
-    let idApp = "T9K6jZD17uI426YGYi85NRBqb74vc3qikziF9ZFNH7NilYpN62oDwPFl0Z82hCOL"
-    var selectedIcon: Icon!
-    var iconFormatElement : FormatElement?
-    var seticonFormatElement : FormatElement?
+    
+    // MARK: - Outlets
     
     @IBOutlet weak var iconNameLabel: UILabel!
     @IBOutlet weak var showIcon: UIImageView!
     @IBOutlet weak var commentLBL: UILabel!
     @IBOutlet weak var commentText: UITextField!
     @IBOutlet weak var iconTopic: UILabel!
-    @IBOutlet weak var commentImage: UIImageView!
     @IBOutlet weak var ViewIcon: UIView!
+    @IBOutlet weak var backgroundImage: UIImageView!
+    @IBOutlet weak var commentBackground: UIImageView!
     
+    
+    // MARK: - Objects
+    
+    let idApp = "T9K6jZD17uI426YGYi85NRBqb74vc3qikziF9ZFNH7NilYpN62oDwPFl0Z82hCOL"
+    var selectedIcon: Icon!
+    var iconFormatElement : FormatElement?
+    var seticonFormatElement : FormatElement?
     var url: URL?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         ViewIcon.layer.cornerRadius = ViewIcon.bounds.width / 2
-        
+        backgroundImage.image = UIImage(named: "Background")
+        commentBackground.image = UIImage(named: "CommentAny")
+        commentLBL.text = "Comment :".localized
+        iconTopic.text = "Topic :".localized
+        commentText.placeholder = "Add Your comment".localized
         
         seticonFormatElement = iconFormatElement
+        
         guard let url = URL(string: seticonFormatElement?.previewURL ?? "") else { return }
         self.url = url
         downloadImage(imageView: showIcon, from: url)
         iconNameLabel.text = selectedIcon.tags.first
-        
-        commentImage.image = UIImage(named: "CommentAny")
-        
-        iconTopic.text = "Topic :"
         
     }
     // MARK: - simple Request ....
@@ -56,6 +64,7 @@ class DownloadViewController: UIViewController , UIImagePickerControllerDelegate
             "Authorization": "Bearer \(idApp)"
         ]
         urlRequest.allHTTPHeaderFields = headers
+        
         //  Send HTTP Request ...
         
         let task = URLSession.shared.dataTask(with: urlRequest as URLRequest) { (data, response, error) in
@@ -116,35 +125,42 @@ class DownloadViewController: UIViewController , UIImagePickerControllerDelegate
         if let error = error {
             // we got back an error!
             
-            showAlertWith(title: "Save error", message: error.localizedDescription)
+            showAlertWith(title: "Save error".localized, message: error.localizedDescription)
         } else {
-            showAlertWith(title: "Saved!", message: "Your image has been saved to your photos.")
+            showAlertWith(title: "Saved!".localized, message: "Your image has been saved to your photos.".localized)
         }
     }
     
+    // MARK: - Alert message
+    
     func showAlertWith(title: String, message: String){
         let ac = UIAlertController(title: title, message: message, preferredStyle: .alert)
-        ac.addAction(UIAlertAction(title: "OK", style: .default))
+        ac.addAction(UIAlertAction(title: "OK".localized, style: .default))
         present(ac, animated: true)
     }
+    
+    // MARK: - Action Methods
     
     @IBAction func downloadImages(_ sender: Any) {
         
         UIImageWriteToSavedPhotosAlbum(showIcon.image!, self, #selector(image(_:didFinishSavingWithError:contextInfo:)), nil)
     }
     
-    //       step 1
-    
+    //     To add comment ans show alert if comment Empty .....
     @IBAction func addComment(_ sender: Any) {
-        //      letif empte show alert ....            ***********************
         
-        UserApi.getProfile(uid: Auth.auth().currentUser?.uid ?? "" , completion: { user in
+        if commentText.text != ""{
             
-            CommentApi.setComment(uid:  Auth.auth().currentUser?.uid ?? "", commentText: self.commentText.text ?? "", image: self.url!.absoluteString, imageUser: user.imageProfile ?? "", userName: user.userName ?? "")
+            UserApi.getProfile(uid: Auth.auth().currentUser?.uid ?? "" , completion: { user in
+                
+                CommentApi.setComment(uid:  Auth.auth().currentUser?.uid ?? "", commentText: self.commentText.text ?? "", image: self.url!.absoluteString, imageUser: user.imageProfile ?? "", userName: user.userName ?? "")
+                
+                self.performSegue(withIdentifier: "showComment", sender: nil )
+            })
             
-            self.performSegue(withIdentifier: "showComment", sender: nil )
-        })
-        
+        }else {
+            showAlertWith(title: "Empty !".localized, message: "Write some comment".localized)
+        }
     }
 }
 

@@ -74,6 +74,7 @@ extension Welcome {
 
 // MARK: - Icon
 struct Icon: Codable {
+    
     let isIconGlyph, isPremium: Bool
     let publishedAt: String
     let vectorSizes: [VectorSize]

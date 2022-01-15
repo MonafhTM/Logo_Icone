@@ -9,6 +9,8 @@ import UIKit
 
 class CollectionViewCell: UICollectionViewCell {
     
+//    Image outlet ..
+    
     @IBOutlet weak var imageIcon: UIImageView!
     
     override func prepareForReuse() {

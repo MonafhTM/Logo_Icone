@@ -13,6 +13,9 @@ import FirebaseStorage
 
 class CreateProfileVC: UIViewController , UITextFieldDelegate {
     
+    
+    // MARK: - Outlets
+    
     @IBOutlet weak var imageProfile: UIImageView!
     
     @IBOutlet weak var usersNameLBL: UILabel!
@@ -35,25 +38,30 @@ class CreateProfileVC: UIViewController , UITextFieldDelegate {
     @IBOutlet weak var genderLBL: UILabel!
     @IBOutlet weak var gendertx: UITextField!
     
-    var theImage : String?
+    @IBOutlet weak var backgroundImage: UIImageView!
     
+    // MARK: - Objects
+    
+    var theImage : String?
     let imagePicker = UIImagePickerController()
     private let caching = CachingProfileManager()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        usersNameLBL.text = "User Name "
-        userName.placeholder = "Enter your userName "
-        firstNameLBL.text = "First Name"
-        firsNametx.placeholder = "Write first name"
-        lastNameLBL.text = "Last Name"
-        lastNametx.placeholder = "write last name "
-        bioLBL.text = "Bio"
-        biotx.placeholder = "your own space to write"
-        ageLBL.text = "AGE"
-        genderLBL.text = "Gender"
-        gendertx.placeholder = "male , Female"
+        usersNameLBL.text = "User Name ".localized
+        userName.placeholder = "Enter your userName ".localized
+        firstNameLBL.text = "First Name".localized
+        firsNametx.placeholder = "Write first name".localized
+        lastNameLBL.text = "Last Name".localized
+        lastNametx.placeholder = "write last name ".localized
+        bioLBL.text = "Bio".localized
+        biotx.placeholder = "your own space to write".localized
+        ageLBL.text = "AGE".localized
+        genderLBL.text = "Gender".localized
+        gendertx.placeholder = "male , Female".localized
+        backgroundImage.image = UIImage(named: "createProfile")
         
         imageProfile.layer.cornerRadius = imageProfile.frame.height / 2
         
@@ -80,37 +88,31 @@ class CreateProfileVC: UIViewController , UITextFieldDelegate {
         { cheak in
             if cheak {
                 print("Done")
-                //
-                //                self.performSegue(withIdentifier: "saveProfile", sender: nil)
-                
                 
                 let vc = self.storyboard?.instantiateViewController(identifier: "saveProfile") as! ProfileTVC
                 self.navigationController?.pushViewController(vc, animated: true)
-                //                vc.modalPresentationStyle = .fullScreen
-                //                self.present(vc, animated: true, completion: nil)
+                
             } else{
                 print("ther is error")
             }
         }
     }
     
+    
+    // MARK: - Action Methods
+    
     @IBAction func choseImage(_ sender: Any) {
         
         imagePicker.sourceType = .photoLibrary
         present(imagePicker, animated: true, completion: nil)
-        
-        
     }
     
     @IBAction func save(_ sender: Any) {
-        
         
         // casting to string
         guard let age = Int(agetx.text ?? "nil") else {return }
         
         profile(userName: userName.text ?? "" ,firstName: firsNametx.text ?? "" ,lastName: lastNametx.text ?? "", bio: biotx.text ?? "", age: age, gender: gendertx.text ?? "" )
-        
-        
     }
 }
 
@@ -122,9 +124,6 @@ extension CreateProfileVC :   UINavigationControllerDelegate, UIImagePickerContr
             guard let image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage
             else {return}
             
-//            self?.imageProfile.image = image
-//                                let image = info[.originalImage] as! UIImage
-//            self?.caching.setImageFromCach(image, forKey: "url")
             self?.imageProfile.image = image
             guard let uid = Auth.auth().currentUser?.uid else {return }
             guard let imageData = image.pngData() else { return }
@@ -135,8 +134,6 @@ extension CreateProfileVC :   UINavigationControllerDelegate, UIImagePickerContr
         picker.dismiss(animated: true, completion: nil)
     }
     
-    //**
-    
     func saveProfileImage(){
         
         guard let url = URL(string: self.theImage ?? "") else {return}
@@ -144,8 +141,8 @@ extension CreateProfileVC :   UINavigationControllerDelegate, UIImagePickerContr
             self.imageProfile.image = UIImage(data: data)
             
         }
-        
     }
+    
     func uploadFile(uid: String, data: Data) {
         
         let storageRef = Storage.storage().reference().child(uid)
@@ -167,11 +164,7 @@ extension CreateProfileVC :   UINavigationControllerDelegate, UIImagePickerContr
                         }
                     }
                 }
-                
-                
             }
         }
     }
 }
-
-

@@ -10,15 +10,16 @@ import SideMenu
 
 
 class TableMuneTVC: UITableViewController {
-
     
-    var textFont = UIFont(name: "Helvetica Bold", size: 12)!
+    
+    var textFont = UIFont(name: "Helvetica Bold", size: 15
+    )!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-//        tableView.backgroundColor = .white
-        tableView.backgroundView = UIImageView(image: UIImage(named: "SidMenu"))
-
+        
+        
+        tableView.backgroundView = UIImageView(image: UIImage(named: "SidMenu1"))
+        
     }
 }

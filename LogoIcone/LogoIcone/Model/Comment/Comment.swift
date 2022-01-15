@@ -7,6 +7,9 @@
 
 import Foundation
 
+
+
+
 class Comment {
     
     var textComment : String?
@@ -18,18 +21,18 @@ class Comment {
     
 }
 
+// create Method For set main  and All commint & get thim to call in CommentApi
+
 extension Comment {
     
     static  func setComment (text : String , image : String ) -> [String:Any] {
         
         return ["textComment": text  ,
                 "imageOfComment" :  image
-                
         ]
-        
     }
 }
-// ********
+
 extension Comment {
     static func getComment(dict: [String: Any]) -> Comment {
         
@@ -42,23 +45,24 @@ extension Comment {
     }
 }
 
+//  extension For set All comment  ...
+
 extension Comment {
-    //****!
-    static func setPublicComment (textComment :String , imageOfComment :String , userName : String , userImage: String, uid: String) -> [String:Any]{
+    
+    static func setAllComment (textComment :String , imageOfComment :String , userName : String , userImage: String, uid: String) -> [String:Any]{
         return ["textComment": textComment  ,
                 "imageOfComment" : imageOfComment,
                 "userName" : userName,
                 "userImage" : userImage,
                 "uid" : uid
         ]
-        
     }
-    
 }
-// **********
+//  extension For get All comment  ...
+
 extension Comment {
     
-    static func getPublicComment(dict: [String: Any]) -> Comment {
+    static func getAllComment(dict: [String: Any]) -> Comment {
         
         let comment = Comment()
         
@@ -70,8 +74,6 @@ extension Comment {
         
         return comment
     }
-    
-    
 }
-    
+
 

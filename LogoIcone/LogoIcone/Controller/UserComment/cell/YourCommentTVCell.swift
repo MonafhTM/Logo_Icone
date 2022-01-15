@@ -1,36 +1,37 @@
 //
-//  publicFavoriteCell.swift
+//  FavoriteTVCell.swift
 //  LogoIcone
 //
-//  Created by Monafh on 07/06/1443 AH.
+//  Created by Monafh on 02/06/1443 AH.
 //
 
 import UIKit
+import FirebaseAuth
+import FirebaseFirestore
 import Kingfisher
 
-class PublicFavoriteTVCell: UITableViewCell {
+class YourCommentTVCell: UITableViewCell {
     
     
-    @IBOutlet weak var imageUserPublic: UIImageView!
-    @IBOutlet weak var userNamePublic: UILabel!
-    @IBOutlet weak var iconeLikePublic: UIImageView!
-    @IBOutlet weak var commentLBL: UILabel!
+    // MARK: - Outlets
     
+    @IBOutlet weak var userImage: UIImageView!
+    @IBOutlet weak var UserName: UILabel!
+    @IBOutlet weak var likeLogoIcon: UIImageView!
+    @IBOutlet weak var commentLogoIcon: UILabel!
     @IBOutlet weak var backgroundImage: UIImageView!
-    
-    
     
     
     override func awakeFromNib() {
         super.awakeFromNib()
         
+     
         backgroundImage.image = UIImage(named: "CommentAny")
         
-        imageUserPublic.image = nil
-        userNamePublic.text = ""
-        iconeLikePublic.image = nil
-        commentLBL.text = ""
-        
+        userImage.image = nil
+        UserName.text = ""
+        likeLogoIcon.image = nil
+        commentLogoIcon.text = ""
         // Initialization code
     }
     
@@ -38,7 +39,5 @@ class PublicFavoriteTVCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
         
         // Configure the view for the selected state
-    }
-    
-    
+    }    
 }

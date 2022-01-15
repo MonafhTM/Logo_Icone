@@ -9,8 +9,6 @@ import FirebaseAuth
 import FirebaseFirestore
 import UIKit
 
-// *
-
 class User {
     
     var firstName:String?
@@ -25,11 +23,38 @@ class User {
     
 }
 
-//*
-
 extension User {
     
-    //
+    
+    // MARK: - Methods For creat & get User with Image Profile
+    
+    
+    static func CreateUser(password:String,email:String) -> [String: Any] {
+        
+        let newUser = [
+            "email" :email,
+            "password" : password
+        ] as [String : Any]
+        
+        return newUser
+    }
+    
+    static func CreateProfile(userName : String ,firstName :String,lastName: String, bio :String , age: Int ,gender : String ) -> [String: Any] {
+        
+        let uesrProfile = [
+            "userName" : userName ,
+            "firstName" : firstName ,
+            "lastName" : lastName,
+            "bio" : bio ,
+            "age" : age ,
+            "gender" : gender,
+        ] as [String : Any]
+        
+        return uesrProfile
+    }
+    
+    //     --> to get user information
+    
     static func getUser(dict: [String: Any]) -> User {
         
         let user = User()
@@ -39,21 +64,16 @@ extension User {
         
         return user
     }
-    // For comment .....
     
-    static func getUserCommentInfo(dict: [String: Any]) -> User {
-        
-        let user = User()
-        
-        user.userName = dict["userName"] as? String
-        user.imageProfile = dict["imageProfile"] as? String
-        
-        return user
-    }
-    
-    
-    
+    //    static func getUserCommentInfo(dict: [String: Any]) -> User {
     //
+    //        let user = User()
+    //
+    //        user.userName = dict["userName"] as? String
+    //        user.imageProfile = dict["imageProfile"] as? String
+    //
+    //        return user
+    //    }
     
     static func getProfile(dict: [String: Any]) -> User {
         
@@ -69,44 +89,10 @@ extension User {
         
         return user
     }
-    //
-    
-    
-    
-    static func CreateUser(password:String,email:String) -> [String: Any] {
-        
-        //        dection....
-        
-        let newUser = [
-            "email" :email,
-            "password" : password
-        ] as [String : Any]
-        
-        return newUser
-    }
-    
-    static func CreateProfile(userName : String ,firstName :String,lastName: String, bio :String , age: Int ,gender : String ) -> [String: Any] {
-        
-        //        dection....
-        
-        let uesrProfile = [
-            "userName" : userName ,
-            "firstName" : firstName ,
-            "lastName" : lastName,
-            "bio" : bio ,
-            "age" : age ,
-            "gender" : gender,
-        ] as [String : Any]
-        
-        return uesrProfile
-    }
-    
-    //     **** ??/
     
     static func putImagePofile(imageProfile : String) -> [String: Any]{
         let newUser = ["imageProfile": imageProfile] as [String: Any]
         return newUser
     }
-    
 }
 

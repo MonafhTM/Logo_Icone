@@ -8,13 +8,16 @@
 import UIKit
 
 class LocalizableVC : UIViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
 }
-extension String {
 
+//  extension for localizable the app to any language ...
+
+extension String {
+    
     var localized: String {
         return NSLocalizedString(self, comment: "")
     }

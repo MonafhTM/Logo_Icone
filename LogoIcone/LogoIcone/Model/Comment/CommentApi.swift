@@ -15,7 +15,7 @@ class CommentApi {
 
     static func setComment(uid : String , commentText : String , image : String, imageUser: String, userName: String ) {
         
-        Firestore.firestore().collection("Comment").addDocument(data:Comment.setPublicComment(textComment: commentText, imageOfComment: image, userName: userName, userImage: imageUser, uid: uid))
+        Firestore.firestore().collection("Comment").addDocument(data:Comment.setAllComment(textComment: commentText, imageOfComment: image, userName: userName, userImage: imageUser, uid: uid))
     }
 
     static func getPublicComment (completion: @escaping(Comment) -> Void ){
@@ -48,7 +48,7 @@ class CommentApi {
         }
     }
 
-    static func getMyComments (uid : String , completion: @escaping (Comment)-> Void){
+    static func getYourComments (uid : String , completion: @escaping (Comment)-> Void){
         
         let refCommentPrivat = Firestore.firestore().collection("Comment").whereField("uid", isEqualTo: uid)
         refCommentPrivat.getDocuments { documents, error in
@@ -58,7 +58,7 @@ class CommentApi {
             }else {
                 guard let documents = documents else {return }
                 for document in documents.documents {
-                    let comment = Comment.getPublicComment(dict: document.data())
+                    let comment = Comment.getAllComment(dict: document.data())
                     completion(comment)
                 }
             }
@@ -77,7 +77,7 @@ class CommentApi {
             }else {
                 guard let documents = documents else {return }
                 for document in documents.documents {
-                    let comment = Comment.getPublicComment(dict: document.data())
+                    let comment = Comment.getAllComment(dict: document.data())
                     completion(comment)
                 }
             }

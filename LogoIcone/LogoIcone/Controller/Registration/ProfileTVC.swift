@@ -9,7 +9,9 @@ import UIKit
 import FirebaseAuth
 import Kingfisher
 class ProfileTVC: UITableViewController  {
-
+    
+    
+    // MARK: - Outlets
     
     @IBOutlet weak var firsNameLBL: UILabel!
     @IBOutlet weak var lasNameLBL: UILabel!
@@ -19,7 +21,7 @@ class ProfileTVC: UITableViewController  {
     @IBOutlet weak var bioLBL: UILabel!
     @IBOutlet weak var imageProfile: UIImageView!
     
-    
+    // MARK: - Objects
     
     var getUser = User()
     var caching = CachingProfileManager()
@@ -48,29 +50,30 @@ class ProfileTVC: UITableViewController  {
                 // guard
                 guard let url = URL(string: user.imageProfile ?? "") else {return}
                 self.imageProfile.kf.setImage(with: url , options: [.cacheOriginalImage])
-//                self.imageProfile.image
-
-            
             })
         }
     }
+    
+    // MARK: - signOut ....
+    
     func signOut() {
         
         let firebaseAuth = Auth.auth()
-    do {
-      try firebaseAuth.signOut()
-    } catch let signOutError as NSError {
-      print("Error signing out:", signOutError)
-    }
+        do {
+            try firebaseAuth.signOut()
+        } catch let signOutError as NSError {
+            print("Error signing out:", signOutError)
+        }
         print ("signout")
-
+        
     }
+    
+    // MARK: - Action Methods
+    
     @IBAction func signOut(_ sender: Any) {
         
         signOut()
         performSegue(withIdentifier: "signup", sender: nil)
         
     }
-    
 }
-

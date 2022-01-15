@@ -11,9 +11,14 @@ import FirebaseAuth
 class PublicFavoriteTVC: UIViewController {
     
     
-    @IBOutlet weak var titleComment: UILabel!
-    @IBOutlet weak var tableView: UITableView!
+    // MARK: - Outlets
     
+    @IBOutlet weak var allComment: UILabel!
+    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var backgroundImage: UIImageView!
+    
+    
+    // MARK: - Objects
     
     var commentArray = [Comment]()
     var currentUser = [User]()
@@ -23,7 +28,9 @@ class PublicFavoriteTVC: UIViewController {
         
         super.viewDidLoad()
         
-        titleComment.text = "Public".localized
+        allComment.text = "Public".localized
+        backgroundImage.image = UIImage(named: "Background")
+        
         tableView.delegate = self
         tableView.dataSource = self
         
@@ -31,11 +38,12 @@ class PublicFavoriteTVC: UIViewController {
             self.commentArray.append(comment)
             self.tableView.reloadData()
         })
-        
     }
-
+    
+    // MARK: - Custom Methods
+    
     func getDataProfile(){
-
+        
         UserApi.getProfile(uid:  Auth.auth().currentUser?.uid ?? "" , completion: { user in
             DispatchQueue.main.async {
                 self.currentUser.append(user)
@@ -45,7 +53,11 @@ class PublicFavoriteTVC: UIViewController {
     }
 }
 
+
 extension PublicFavoriteTVC : UITableViewDelegate ,UITableViewDataSource {
+    
+    // MARK: - TableView
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return commentArray.count
     }
@@ -56,7 +68,7 @@ extension PublicFavoriteTVC : UITableViewDelegate ,UITableViewDataSource {
         
         cell.userNamePublic.text = commentArray[indexPath.row].userName
         cell.commentLBL.text = commentArray[indexPath.row].textComment
-
+        
         
         guard let url = URL(string: commentArray[indexPath.row].imageOfComment ?? "") else {return UITableViewCell()}
         cell.iconeLikePublic.kf.setImage(with: url)
@@ -69,6 +81,7 @@ extension PublicFavoriteTVC : UITableViewDelegate ,UITableViewDataSource {
         return cell
         
     }
+    //    control heigh in cell
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 250
     }

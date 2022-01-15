@@ -13,15 +13,17 @@ import UIKit
 extension SearchVC {
     
     //    MARK: - simple Request
+    
     func simpleReqest(nameOfTheSerach: String, size: Int){
         let url = "https://api.iconfinder.com/v4/icons/search"
+        
         let request = NSMutableURLRequest(url: NSURL(string: "\(url)?query=\(nameOfTheSerach)&count=30")! as URL,cachePolicy: .useProtocolCachePolicy,timeoutInterval: 10.0)
+        
         request.httpMethod = "GET"
+        
         let headers = [ "Accept": "application/json", "Authorization": "Bearer \(idApp)"
         ]
         request.allHTTPHeaderFields = headers
-        
-        //    ----------------------------------
         
         //  Send HTTP Request
         let task = URLSession.shared.dataTask(with: request as URLRequest) { (data, response, error) in
@@ -50,6 +52,7 @@ extension SearchVC {
     }
     
     // MARK: - Download Images
+    
     func getData(from url: URL, completion: @escaping (Data?, URLResponse?, Error?) -> ()) {
         URLSession.shared.dataTask(with: url, completionHandler: completion).resume()
     }
@@ -60,7 +63,7 @@ extension SearchVC {
             guard let data = data, error == nil else { return }
             print(response?.suggestedFilename ?? url.lastPathComponent)
             print("Download Finished")
-            // always update the UI from the main thread
+            // update the UI from the main thread
             DispatchQueue.main.async() {
                 imageView.image = UIImage(data: data)
             }

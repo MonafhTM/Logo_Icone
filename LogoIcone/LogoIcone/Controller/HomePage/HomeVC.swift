@@ -9,7 +9,10 @@ import UIKit
 
 class HomeVC: UIPageViewController ,UIPageViewControllerDelegate, UIPageViewControllerDataSource {
     
+    
+    // MARK: - Objects
     var arryInformaition = [UIViewController]()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,19 +21,20 @@ class HomeVC: UIPageViewController ,UIPageViewControllerDelegate, UIPageViewCont
         dataSource = self
         
         DescriptionAboutLogoIcone()
-        
     }
     
+    
+    // MARK: - Custom Methods
     //    func For the information in firstPage that show for visitors ....
     
     fileprivate func DescriptionAboutLogoIcone() {
         
         let firstVC = self.storyboard?.instantiateViewController(withIdentifier: "firstPage") as! HomePageVC
         
-    // Information for First ViewController in Screen ....
+        // Information for First ViewController in Screen ....
         
         firstVC.pageTitle = "ICON".localized
-        firstVC.pageInfo = "free vector icons in one place. Download all the free icons in SVG and PNG formats . Use them for web design , mobile apps ".localized
+        firstVC.pageInfo = "free vector icons in one place. Download all the free icons in SVG and PNG formats . Use them for web design , mobile apps".localized
         firstVC.imageShow = UIImage(named: "HomeImage")
         
         // Information for Second ViewController in same Screen ....
@@ -38,7 +42,7 @@ class HomeVC: UIPageViewController ,UIPageViewControllerDelegate, UIPageViewCont
         let secondVC = self.storyboard?.instantiateViewController(withIdentifier: "firstPage") as! HomePageVC
         
         secondVC.pageTitle = "LOGO"
-        secondVC.pageInfo = "IF YOU Find Yourself short on logo Ideas , Explore Our  Logo template TO Find What You Need. "
+        secondVC.pageInfo = "you will Find What You Need, from Global and common logos, you can view and use them."
         secondVC.imageShow =  UIImage(named: "HomeImage1")
         
         // append them to UIViewController Array .....
@@ -50,7 +54,7 @@ class HomeVC: UIPageViewController ,UIPageViewControllerDelegate, UIPageViewCont
             setViewControllers([pageVC], direction: .forward, animated: true, completion: nil)
         }
     }
-    
+    //
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
         guard let currentIndex = arryInformaition.firstIndex(of: viewController) else{
             return nil
@@ -74,9 +78,11 @@ class HomeVC: UIPageViewController ,UIPageViewControllerDelegate, UIPageViewCont
         
         return arryInformaition[nextIndex]
     }
+    
     func presentationCount(for pageViewController: UIPageViewController) -> Int {
         return arryInformaition.count
     }
+    
     func presentationIndex(for pageViewController: UIPageViewController) -> Int {
         return 0
     }
