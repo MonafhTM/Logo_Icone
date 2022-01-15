@@ -8,6 +8,8 @@
 import UIKit
 import FirebaseAuth
 import FirebaseFirestore
+import Firebase
+import GoogleSignIn
 
 class SignUpVC: UIViewController {
     
