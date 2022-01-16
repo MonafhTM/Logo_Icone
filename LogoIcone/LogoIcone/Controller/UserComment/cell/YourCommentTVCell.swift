@@ -25,7 +25,7 @@ class YourCommentTVCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         
-     
+        
         backgroundImage.image = UIImage(named: "CommentAny")
         
         userImage.image = nil

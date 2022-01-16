@@ -44,9 +44,7 @@ class CreateProfileVC: UIViewController , UITextFieldDelegate {
     
     var theImage : String?
     let imagePicker = UIImagePickerController()
-    private let caching = CachingProfileManager()
-    
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -74,14 +72,6 @@ class CreateProfileVC: UIViewController , UITextFieldDelegate {
         
     }
     
-    //  MARK: - Load Image From Caching
-    
-    override func viewWillAppear(_ animated: Bool) {
-        let image = caching.getImage(forKey: "url")
-        guard let image = image else { return }
-        self.imageProfile.image = image
-    }
-    
     func profile(userName :String, firstName :String, lastName :String, bio :String , age: Int ,gender : String) {
         
         UserApi.addProfileInfo(userName: userName ,firstName: firstName, lastName: lastName, bio: bio, age: age, gender: gender, uid: Auth.auth().currentUser?.uid ?? "")
@@ -97,7 +87,6 @@ class CreateProfileVC: UIViewController , UITextFieldDelegate {
             }
         }
     }
-    
     
     // MARK: - Action Methods
     

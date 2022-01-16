@@ -25,8 +25,7 @@ class DownloadIconVC: UIViewController , UIImagePickerControllerDelegate, UINavi
     @IBOutlet weak var backgroundImage: UIImageView!
     @IBOutlet weak var commentBackground: UIImageView!
     
-    
-    // MARK: - Objects
+        // MARK: - Objects
     
     let idApp = "T9K6jZD17uI426YGYi85NRBqb74vc3qikziF9ZFNH7NilYpN62oDwPFl0Z82hCOL"
     var selectedIcon: Icon!

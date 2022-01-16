@@ -49,7 +49,7 @@ class SearchVC: UIViewController , UISearchBarDelegate{
         
         let nameOfTheSerach = ""
         
-        if nameOfTheSerach != "Arrow"  {
+        if nameOfTheSerach == "Arrow"  {
             
             //             Alert massage ...
             showAlertWith(title: "Error".localized, message: "Search about Something else".localized)
