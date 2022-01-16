@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="0l8-mC-8Ud">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="PV9-KX-kTH">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
@@ -950,8 +950,8 @@
                                     <constraint firstItem="Pzw-1b-344" firstAttribute="leading" secondItem="FwB-2h-CB3" secondAttribute="leading" id="q9U-0U-2jG"/>
                                 </constraints>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="7PY-HQ-t78">
-                                <rect key="frame" x="70" y="313" width="274" height="90"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="7PY-HQ-t78">
+                                <rect key="frame" x="70" y="313" width="274" height="91"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="38" translatesAutoresizingMaskIntoConstraints="NO" id="5lK-3n-Vtz">
                                         <rect key="frame" x="0.0" y="0.0" width="274" height="50"/>
@@ -974,47 +974,31 @@
                                             <constraint firstAttribute="height" constant="50" id="QLS-0M-j4q"/>
                                         </constraints>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="bottom" spacing="27" translatesAutoresizingMaskIntoConstraints="NO" id="Gmf-fr-DsO">
-                                        <rect key="frame" x="0.0" y="60" width="274" height="30"/>
-                                        <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uSW-Md-nWm">
-                                                <rect key="frame" x="0.0" y="1" width="123.5" height="29"/>
-                                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" title="Details" cornerStyle="capsule">
-                                                    <backgroundConfiguration key="background" image="color"/>
-                                                    <fontDescription key="titleFontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="15"/>
-                                                </buttonConfiguration>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="par-u0-uf4">
-                                                <rect key="frame" x="150.5" y="0.0" width="123.5" height="30"/>
-                                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" title="save" cornerStyle="capsule">
-                                                    <backgroundConfiguration key="background" image="color"/>
-                                                    <fontDescription key="titleFontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="17"/>
-                                                </buttonConfiguration>
-                                                <connections>
-                                                    <action selector="downloadImages:" destination="snd-pn-SAe" eventType="touchUpInside" id="gWU-on-CZh"/>
-                                                </connections>
-                                            </button>
-                                        </subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="par-u0-uf4">
+                                        <rect key="frame" x="87" y="60" width="100" height="31"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="30" id="HS3-pX-tJN"/>
+                                            <constraint firstAttribute="height" constant="31" id="3Z2-yh-fVP"/>
+                                            <constraint firstAttribute="width" constant="100" id="AkI-bg-JTB"/>
                                         </constraints>
-                                    </stackView>
+                                        <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="save" cornerStyle="capsule">
+                                            <backgroundConfiguration key="background" image="color"/>
+                                            <fontDescription key="titleFontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="17"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="downloadImages:" destination="snd-pn-SAe" eventType="touchUpInside" id="gWU-on-CZh"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="5lK-3n-Vtz" firstAttribute="top" secondItem="7PY-HQ-t78" secondAttribute="top" id="1T3-yy-mGo"/>
-                                    <constraint firstItem="Gmf-fr-DsO" firstAttribute="leading" secondItem="7PY-HQ-t78" secondAttribute="leading" id="8pi-gY-fgs"/>
                                     <constraint firstAttribute="trailing" secondItem="5lK-3n-Vtz" secondAttribute="trailing" id="90v-S9-qqy"/>
-                                    <constraint firstAttribute="trailing" secondItem="Gmf-fr-DsO" secondAttribute="trailing" id="eib-a3-nb9"/>
                                     <constraint firstItem="5lK-3n-Vtz" firstAttribute="leading" secondItem="7PY-HQ-t78" secondAttribute="leading" id="oR6-aJ-BfB"/>
-                                    <constraint firstAttribute="bottom" secondItem="Gmf-fr-DsO" secondAttribute="bottom" id="yB9-HY-pj5"/>
                                 </constraints>
                             </stackView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HGd-Ap-Qpd">
-                                <rect key="frame" x="10" y="443" width="394" height="200"/>
+                                <rect key="frame" x="10" y="444" width="394" height="200"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ghy-iz-m5F">
                                         <rect key="frame" x="0.0" y="0.0" width="394" height="200"/>
@@ -1051,7 +1035,7 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iga-Dp-3t7">
-                                <rect key="frame" x="120" y="693" width="174" height="31"/>
+                                <rect key="frame" x="120" y="694" width="174" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="31" id="gan-Qq-9eK"/>
                                 </constraints>
@@ -1553,7 +1537,7 @@
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CLt-qz-BMk">
                                                     <rect key="frame" x="25" y="16" width="329" height="18"/>
-                                                    <fontDescription key="fontDescription" name="Farah" family="Farah" pointSize="15"/>
+                                                    <fontDescription key="fontDescription" name="Farah" family="Farah" pointSize="20"/>
                                                     <color key="textColor" name="ColorComment"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -1609,7 +1593,7 @@
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1MD-9z-NXv">
                                                     <rect key="frame" x="25" y="16" width="329" height="18"/>
-                                                    <fontDescription key="fontDescription" name="Farah" family="Farah" pointSize="15"/>
+                                                    <fontDescription key="fontDescription" name="Farah" family="Farah" pointSize="20"/>
                                                     <color key="textColor" name="ColorComment"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -1928,7 +1912,7 @@
         <segue reference="y1M-h7-d8s"/>
         <segue reference="b2Z-3U-rjb"/>
         <segue reference="nDV-nB-YDh"/>
-        <segue reference="4IO-8H-Ms3"/>
+        <segue reference="mF9-q0-Mmx"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Background" width="576" height="1255"/>

@@ -48,7 +48,7 @@ class LogoVC: UIViewController {
     func simpleReqest(url : String) {
 //        API key
         let appId = "SrbY0wMaPciZhR7Q7m1Kfynns/P4G/NEu4gkqcHSbys="
-//        let appId = "6ynTtpMi42PlOtqhx7qCefPx7CxpRCTQu716xg" //// spare Key
+//        let appId = "x51nS7J4Z/UOqscmGPtxhOnZC0ns8ZWVAWeM5fgVBuw=" //// spare Key
 
 
         let request = NSMutableURLRequest(url: NSURL(string: "\(url)" )! as URL, cachePolicy: .useProtocolCachePolicy,timeoutInterval: Double.infinity)
