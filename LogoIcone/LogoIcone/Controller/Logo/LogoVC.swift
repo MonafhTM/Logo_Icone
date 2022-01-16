@@ -8,13 +8,14 @@ class LogoVC: UIViewController {
 
 
     @IBOutlet weak var titelForLogoSection: UILabel!
-
+    @IBOutlet weak var tableView: UITableView!
+    
+    
+    
     // MARK: - Objects
     var brands : [Brandfetch] = []
     var urlLink = [
         "https://api.brandfetch.io/v2/brands/brandfetch.com", "https://api.brandfetch.io/v2/brands/spotify.com", "https://api.brandfetch.io/v2/brands/salesforce.com", "https://api.brandfetch.io/v2/brands/netflix.com", "https://api.brandfetch.io/v2/brands/github.com", "https://api.brandfetch.io/v2/brands/airbnb.com", "https://api.brandfetch.io/v2/brands/mailchimp.com", "https://api.brandfetch.io/v2/brands/figma.com", "https://api.brandfetch.io/v2/brands/reddit.com", "https://api.brandfetch.io/v2/brands/invision.com", "https://api.brandfetch.io/v2/brands/bitcoin.com", "https://api.brandfetch.io/v2/brands/uber.com", "https://api.brandfetch.io/v2/brands/zendesk.com", "https://api.brandfetch.io/v2/brands/webflow.com",  "https://api.brandfetch.io/v2/brands/asana.com",  "https://api.brandfetch.io/v2/brands/stripe.com",  "https://api.brandfetch.io/v2/brands/intercom.com"]
-
-    @IBOutlet weak var tableView: UITableView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,24 +26,11 @@ class LogoVC: UIViewController {
         // subject for title Section ...
 
         titelForLogoSection.text = "Global Logo".localized
-
-        simpleReqest(url:"https://api.brandfetch.io/v2/brands/brandfetch.com")
-        simpleReqest(url:"https://api.brandfetch.io/v2/brands/spotify.com")
-        simpleReqest(url:"https://api.brandfetch.io/v2/brands/salesforce.com")
-        simpleReqest(url:"https://api.brandfetch.io/v2/brands/netflix.com")
-        simpleReqest(url:"https://api.brandfetch.io/v2/brands/github.com")
-        simpleReqest(url:"https://api.brandfetch.io/v2/brands/airbnb.com")
-        simpleReqest(url:"https://api.brandfetch.io/v2/brands/mailchimp.com")
-        simpleReqest(url:"https://api.brandfetch.io/v2/brands/figma.com")
-        simpleReqest(url:"https://api.brandfetch.io/v2/brands/reddit.com")
-        simpleReqest(url:"https://api.brandfetch.io/v2/brands/invision.com")
-        simpleReqest(url:"https://api.brandfetch.io/v2/brands/bitcoin.com")
-        simpleReqest(url:"https://api.brandfetch.io/v2/brands/uber.com" )
-        simpleReqest(url:"https://api.brandfetch.io/v2/brands/zendesk.com")
-        simpleReqest(url:"https://api.brandfetch.io/v2/brands/webflow.com")
-        simpleReqest(url:"https://api.brandfetch.io/v2/brands/asana.com")
-        simpleReqest(url: "https://api.brandfetch.io/v2/brands/stripe.com")
-        simpleReqest(url:"https://api.brandfetch.io/v2/brands/intercom.com")
+        
+        for i in urlLink {
+           print (simpleReqest(url: i))
+        }
+       
     }
 
     func simpleReqest(url : String) {

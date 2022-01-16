@@ -54,6 +54,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A70BD5D1279438D600FF9C39 /* ar-SA */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "ar-SA"; path = "ar-SA.lproj/Main.strings"; sourceTree = "<group>"; };
 		A757A016277C440700465551 /* LogoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoVC.swift; sourceTree = "<group>"; };
 		A757A018277C445700465551 /* LogoTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoTVCell.swift; sourceTree = "<group>"; };
 		A778888B27784BDB0034E303 /* VideoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoVC.swift; sourceTree = "<group>"; };
@@ -90,7 +91,6 @@
 		A7CF99DD278C3F710080996C /* CommentApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentApi.swift; sourceTree = "<group>"; };
 		A7CF99DF278C48A10080996C /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
 		A7CF99E6278D10230080996C /* ar-SA */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "ar-SA"; path = "ar-SA.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
-		A7CF99E7278D10230080996C /* ar-SA */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "ar-SA"; path = "ar-SA.lproj/Main.strings"; sourceTree = "<group>"; };
 		A7CF99EB278D11410080996C /* ar-SA */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "ar-SA"; path = "ar-SA.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		A7DD73C92793F74600C19FDF /* Video.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = Video.mp4; path = ../../Video.mp4; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -464,7 +464,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				A783CD6C27774BD000D1503B /* Base */,
-				A7CF99E7278D10230080996C /* ar-SA */,
+				A70BD5D1279438D600FF9C39 /* ar-SA */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";

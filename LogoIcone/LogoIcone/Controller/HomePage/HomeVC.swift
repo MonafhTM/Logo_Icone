@@ -41,8 +41,8 @@ class HomeVC: UIPageViewController ,UIPageViewControllerDelegate, UIPageViewCont
         
         let secondVC = self.storyboard?.instantiateViewController(withIdentifier: "firstPage") as! HomePageVC
         
-        secondVC.pageTitle = "LOGO"
-        secondVC.pageInfo = "you will Find What You Need, from Global and common logos, you can view and use them."
+        secondVC.pageTitle = "LOGO".localized
+        secondVC.pageInfo = "you will Find What You Need, from Global and common logos, you can view and use them.".localized
         secondVC.imageShow =  UIImage(named: "HomeImage1")
         
         // append them to UIViewController Array .....
