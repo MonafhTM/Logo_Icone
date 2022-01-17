@@ -5,7 +5,7 @@
 The application gives you the ability to search for and download popular icons for general and practical uses, with the ability to comment and publish them within the application.
 
 
-##⇢ User Stories :-
+## User Stories :-
 
 ### - HomePage: 
 First secreen the user will see and It is a welcome screen to explanation of the icons and logo ,then
@@ -38,7 +38,7 @@ famous and popular icons will be displayed to the user.
 
 
 
-#⇢ Define the scenes :-
+## Define the scenes :-
 
 - HomePage:
 This Screen will show the information of the icons section and the logos section will be displayed, and
