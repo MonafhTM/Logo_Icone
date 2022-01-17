@@ -105,7 +105,7 @@ it contains to a :
 <div style="display: flex; flex-direction: column; width: 100%">
 
 <img src="https://raw.githubusercontent.com/MonaFh7/LogoIcone/main/Design.png" />
-<video>
+<video style="width:100%; height: auto;">
 <source src="https://github.com/MonaFh7/LogoIcone/blob/main/demo.mp4?raw=true" type="video/mp4" />
 </video>
 
