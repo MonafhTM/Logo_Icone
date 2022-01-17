@@ -106,7 +106,7 @@ it contains to a :
 
 <img src="https://raw.githubusercontent.com/MonaFh7/LogoIcone/main/Design.png" />
 <video style="width:100%; height: auto;" width="320" height="240" controls>
-<source src="https://github.com/MonaFh7/LogoIcone/blob/main/demo.mp4?raw=true" type="video/mp4" >
+<source src="https://raw.githubusercontent.com/MonaFh7/LogoIcone/main/demo.mp4" type="video/mp4" >
 </video>
 
 </div>
