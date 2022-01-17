@@ -1,11 +1,11 @@
 #  LogoIcone
 
-##- Description :
+# Description :
 
 The application gives you the ability to search for and download popular icons for general and practical uses, with the ability to comment and publish them within the application.
 
 
-##⇢ User Stories :
+##⇢ User Stories :-
 
 ### - HomePage: 
 First secreen the user will see and It is a welcome screen to explanation of the icons and logo ,then
@@ -18,7 +18,7 @@ A screen that displays a video for the user explaining the application section a
 If he choose directed to "register", the First Screen will sea the "login" screen appears, an option is
 at the bottom if you not have account، he will be directed to fill in his personal data to complete the registration.
 
-### - SearcIcon :
+### - SearchIcon :
 Icons search screen, in the search field the name of the required icon is written, then a group of
 icons will appear and when selected, it will be directed to the loading screen and add the comment.
 
@@ -38,7 +38,7 @@ famous and popular icons will be displayed to the user.
 
 
 
-#⇢ Define the scenes :
+#⇢ Define the scenes :-
 
 - HomePage:
 This Screen will show the information of the icons section and the logos section will be displayed, and
