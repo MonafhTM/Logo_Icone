@@ -67,6 +67,7 @@ class LogoTVCell: UITableViewCell {
     @IBAction func save(_ sender: Any) {
         
         UIImageWriteToSavedPhotosAlbum(firstLogoBrands.image!, self, #selector(image(_:didFinishSavingWithError:contextInfo:)), nil)
+        UIImageWriteToSavedPhotosAlbum(secondLogoBrands.image!, self, #selector(image(_:didFinishSavingWithError:contextInfo:)), nil)
     }
 }
 
