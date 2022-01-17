@@ -57,6 +57,7 @@
 		A70BD5D1279438D600FF9C39 /* ar-SA */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "ar-SA"; path = "ar-SA.lproj/Main.strings"; sourceTree = "<group>"; };
 		A757A016277C440700465551 /* LogoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoVC.swift; sourceTree = "<group>"; };
 		A757A018277C445700465551 /* LogoTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoTVCell.swift; sourceTree = "<group>"; };
+		A775B93E279521AB00A2B15B /* LogoIcone.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LogoIcone.entitlements; sourceTree = "<group>"; };
 		A778888B27784BDB0034E303 /* VideoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoVC.swift; sourceTree = "<group>"; };
 		A778888D27784CFA0034E303 /* ProfileTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTVC.swift; sourceTree = "<group>"; };
 		A778889727787CFE0034E303 /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
@@ -142,6 +143,13 @@
 			path = Logo;
 			sourceTree = "<group>";
 		};
+		A775B93F2795228100A2B15B /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
 		A778887C2777C6EF0034E303 /* SideMenu */ = {
 			isa = PBXGroup;
 			children = (
@@ -181,6 +189,8 @@
 		A783CD6427774BD000D1503B /* LogoIcone */ = {
 			isa = PBXGroup;
 			children = (
+				A775B93E279521AB00A2B15B /* LogoIcone.entitlements */,
+				A775B93F2795228100A2B15B /* New Group */,
 				A783CD872777595A00D1503B /* Model */,
 				A783CD882777597300D1503B /* View */,
 				A783CD892777598900D1503B /* Controller */,
@@ -612,8 +622,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = LogoIcone/LogoIcone.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = A3H9JP34RY;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = LogoIcone/Info.plist;
 				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "we need to add photos to your library";
@@ -640,8 +652,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = LogoIcone/LogoIcone.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = A3H9JP34RY;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = LogoIcone/Info.plist;
 				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "we need to add photos to your library";

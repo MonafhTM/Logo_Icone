@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="PV9-KX-kTH">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="PV9-KX-kTH">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -764,15 +764,15 @@
                                 <rect key="frame" x="0.0" y="190" width="414" height="623"/>
                                 <color key="backgroundColor" name="TVColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="283" id="aoO-0u-weR" customClass="LogoTVCell" customModule="LogoIcone" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="44.5" width="414" height="283"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="349" id="aoO-0u-weR" customClass="LogoTVCell" customModule="LogoIcone" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="349"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="aoO-0u-weR" id="mGu-jj-vCY">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="283"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="349"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="Z6L-ud-Faa">
-                                                    <rect key="frame" x="20" y="11" width="374" height="261"/>
+                                                    <rect key="frame" x="20" y="11" width="374" height="327"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fao-e9-Cz5">
                                                             <rect key="frame" x="0.0" y="0.0" width="374" height="60"/>
@@ -831,11 +831,25 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tdY-LH-rde">
-                                                            <rect key="frame" x="0.0" y="181" width="374" height="80"/>
+                                                            <rect key="frame" x="0.0" y="181" width="374" height="110"/>
                                                             <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="15"/>
                                                             <color key="textColor" name="line"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DNF-kE-LGA">
+                                                            <rect key="frame" x="0.0" y="298" width="374" height="29"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="29" id="L9y-Dj-goa"/>
+                                                                <constraint firstAttribute="width" constant="81" id="Zmg-IH-SA0"/>
+                                                            </constraints>
+                                                            <state key="normal" title="Button"/>
+                                                            <buttonConfiguration key="configuration" style="plain" title="save">
+                                                                <backgroundConfiguration key="background" image="color"/>
+                                                            </buttonConfiguration>
+                                                            <connections>
+                                                                <action selector="save:" destination="aoO-0u-weR" eventType="touchUpInside" id="9QG-06-mgD"/>
+                                                            </connections>
+                                                        </button>
                                                     </subviews>
                                                     <color key="backgroundColor" name="SidMenuColor"/>
                                                     <constraints>
@@ -1912,7 +1926,7 @@
         <segue reference="y1M-h7-d8s"/>
         <segue reference="b2Z-3U-rjb"/>
         <segue reference="nDV-nB-YDh"/>
-        <segue reference="mF9-q0-Mmx"/>
+        <segue reference="4IO-8H-Ms3"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Background" width="576" height="1255"/>

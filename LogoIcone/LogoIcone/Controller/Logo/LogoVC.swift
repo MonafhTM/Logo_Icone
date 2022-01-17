@@ -121,6 +121,7 @@ extension LogoVC : UITableViewDelegate , UITableViewDataSource  {
 
         //        set name & description in cell ..
 
+        cell.parentController = self
         cell.nameBrandsLBL.text = brands[indexPath.row].name
         cell.descriptionLBL.text = brands[indexPath.row].brandfetchDescription
 
@@ -140,5 +141,15 @@ extension LogoVC : UITableViewDelegate , UITableViewDataSource  {
         return 370
 
     }
+    
+    
+    // MARK: - Alert message
+    
+    func showAlertWith(title: String, message: String){
+        let ac = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        ac.addAction(UIAlertAction(title: "OK".localized, style: .default))
+        present(ac, animated: true)
+    }
+
 
 }

@@ -23,6 +23,7 @@ class LogoTVCell: UITableViewCell {
     // MARK: - Objects
     
     var brands : [Brandfetch] = []
+    var parentController : LogoVC!
     
     
     override func awakeFromNib() {
@@ -37,4 +38,35 @@ class LogoTVCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
         
     }
+    
+    //MARK: - Add image to Library ...
+    
+    @objc func image(_ image: UIImage, didFinishSavingWithError error: Error?, contextInfo: UnsafeRawPointer) {
+        
+        if let error = error {
+            // we got back an error!
+            
+            showAlertWith(title: "Save error".localized, message: error.localizedDescription)
+        } else {
+            showAlertWith(title: "Saved!".localized, message: "Your image has been saved to your photos.".localized)
+        }
+    }
+    
+    // MARK: - Alert message
+    
+    func showAlertWith(title: String, message: String){
+        let ac = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        ac.addAction(UIAlertAction(title: "OK".localized, style: .default))
+        parentController.present(ac, animated: true)
+    }
+
+    
+    // MARK: - Action Methods
+    
+    
+    @IBAction func save(_ sender: Any) {
+        
+        UIImageWriteToSavedPhotosAlbum(firstLogoBrands.image!, self, #selector(image(_:didFinishSavingWithError:contextInfo:)), nil)
+    }
 }
+
