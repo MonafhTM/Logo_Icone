@@ -19,10 +19,6 @@ class User {
     var age: Int?
     var gender: String?
     var password :String?
-    
-    
-    
-    
     var imageProfile : String?
     
 }
