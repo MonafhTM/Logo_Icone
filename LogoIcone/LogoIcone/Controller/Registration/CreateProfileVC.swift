@@ -70,6 +70,9 @@ class CreateProfileVC: UIViewController , UITextFieldDelegate {
         agetx.delegate = self
         imagePicker.delegate = self
         
+        let TapGesture = UITapGestureRecognizer(target: self.view, action: #selector(UIView.endEditing))
+              view.addGestureRecognizer(TapGesture)
+        
     }
     
     func profile(userName :String, firstName :String, lastName :String, bio :String , age: Int ,gender : String) {

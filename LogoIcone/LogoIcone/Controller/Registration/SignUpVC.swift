@@ -34,6 +34,9 @@ class SignUpVC: UIViewController {
         infoLBL.text = "Please create a strong password and at least 8 Characters".localized
         signUpBackground.image = UIImage(named: "SignUp")
         
+        let TapGesture = UITapGestureRecognizer(target: self.view, action: #selector(UIView.endEditing))
+              view.addGestureRecognizer(TapGesture)
+        
     }
     
     

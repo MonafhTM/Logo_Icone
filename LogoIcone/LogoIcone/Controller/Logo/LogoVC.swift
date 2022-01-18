@@ -30,7 +30,8 @@ class LogoVC: UIViewController {
         for i in urlLink {
            print (simpleReqest(url: i))
         }
-       
+        let TapGesture = UITapGestureRecognizer(target: self.view, action: #selector(UIView.endEditing))
+              view.addGestureRecognizer(TapGesture)
     }
 
     func simpleReqest(url : String) {

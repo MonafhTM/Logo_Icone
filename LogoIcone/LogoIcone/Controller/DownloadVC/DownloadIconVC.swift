@@ -50,6 +50,9 @@ class DownloadIconVC: UIViewController , UIImagePickerControllerDelegate, UINavi
         downloadImage(imageView: showIcon, from: url)
         iconNameLabel.text = selectedIcon.tags.first
         
+        let TapGesture = UITapGestureRecognizer(target: self.view, action: #selector(UIView.endEditing))
+              view.addGestureRecognizer(TapGesture)
+        
     }
     // MARK: - simple Request ....
     

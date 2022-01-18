@@ -31,6 +31,8 @@ class SignInVC : UIViewController {
         passwordLBL.text = "Password".localized
         password.placeholder = "Enter password".localized
         signInBackground.image = UIImage(named: "SignIn")
+        let TapGesture = UITapGestureRecognizer(target: self.view, action: #selector(UIView.endEditing))
+              view.addGestureRecognizer(TapGesture)
         
     }
     

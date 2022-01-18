@@ -1279,7 +1279,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Sfh-VG-TfG">
-                                <rect key="frame" x="0.0" y="208" width="414" height="631"/>
+                                <rect key="frame" x="0.0" y="208" width="414" height="582"/>
                                 <color key="backgroundColor" name="TVColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="298" id="QfC-s1-M8H" customClass="PublicFavoriteTVCell" customModule="LogoIcone" customModuleProvider="target">
@@ -1420,7 +1420,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4c8-wV-zGu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5203" y="-2028"/>
+            <point key="canvasLocation" x="5203" y="-1927"/>
         </scene>
         <!--VideoVC-->
         <scene sceneID="qhc-Hf-fcQ">
@@ -1875,7 +1875,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CR2-c2-B4t" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2867" y="-2621"/>
+            <point key="canvasLocation" x="2786" y="-3006"/>
         </scene>
         <!--Favorite-->
         <scene sceneID="PCH-D2-kHU">
@@ -1921,12 +1921,12 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="vc7-3K-s5A"/>
-        <segue reference="WDv-vG-ROV"/>
+        <segue reference="WOe-7h-FpS"/>
+        <segue reference="WVx-T6-qDQ"/>
         <segue reference="y1M-h7-d8s"/>
         <segue reference="b2Z-3U-rjb"/>
         <segue reference="nDV-nB-YDh"/>
-        <segue reference="4IO-8H-Ms3"/>
+        <segue reference="Ok4-4v-KGp"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Background" width="576" height="1255"/>

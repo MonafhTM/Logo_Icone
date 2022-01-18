@@ -41,6 +41,9 @@ class SearchVC: UIViewController , UISearchBarDelegate{
         titleForSearch.text = "Look For Icone :".localized
         searchBar.placeholder = "Search here Please".localized
         
+//        let TapGesture = UITapGestureRecognizer(target: self.view, action: #selector(UIView.endEditing))
+//              view.addGestureRecognizer(TapGesture)
+        
     }
     
     // MARK: - search Bar Methods
