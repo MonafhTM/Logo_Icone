@@ -89,11 +89,7 @@ it contains to a :
 - UserComment
 - AllUsersComment.
 
-## Services
-
-
-
- :- 
+## Services :- 
 
 - auth.login(user)
 - auth.signup(user)
@@ -101,9 +97,9 @@ it contains to a :
 - auth.logout()
 - auth.comment()
 
-##- Slides :
 
 
+## 	wireframe :- 
 
 
 <div style="display: flex; flex-direction: column; width: 100%">
@@ -119,3 +115,4 @@ it contains to a :
 https://user-images.githubusercontent.com/91872125/149751037-def2cd49-c422-4539-bc4d-91f5f25161a2.mp4
 
 
+##- Slides :
