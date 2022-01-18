@@ -26,6 +26,11 @@ class User {
 extension User {
     
     
+    
+    
+    
+    
+    
     // MARK: - Methods For creat & get User with Image Profile
     
     
