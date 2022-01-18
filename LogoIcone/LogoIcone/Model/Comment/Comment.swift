@@ -13,9 +13,11 @@ import Foundation
 class Comment {
     
     var textComment : String?
+    
     var imageOfComment : String?
     
     var userName : String?
+    
     var userImage : String?
     
     
