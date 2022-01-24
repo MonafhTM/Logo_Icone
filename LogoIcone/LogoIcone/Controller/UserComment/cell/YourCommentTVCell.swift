@@ -27,12 +27,20 @@ class YourCommentTVCell: UITableViewCell {
         
         
         backgroundImage.image = UIImage(named: "CommentAny")
+        userImage.layer.cornerRadius = userImage.frame.height / 2
+        
+
+        // Initialization code
+    }
+    
+    override func prepareForReuse() {
+        super.prepareForReuse()
         
         userImage.image = nil
         UserName.text = ""
         likeLogoIcon.image = nil
         commentLogoIcon.text = ""
-        // Initialization code
+        
     }
     
     override func setSelected(_ selected: Bool, animated: Bool) {

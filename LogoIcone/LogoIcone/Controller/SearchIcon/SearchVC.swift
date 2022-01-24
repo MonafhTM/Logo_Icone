@@ -15,6 +15,7 @@ class SearchVC: UIViewController , UISearchBarDelegate{
     @IBOutlet var myCollectionView: UICollectionView!
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var backgroundImage: UIImageView!
+    @IBOutlet weak var backgroundCollection: UIView!
     
     
     
@@ -32,7 +33,7 @@ class SearchVC: UIViewController , UISearchBarDelegate{
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        backgroundCollection.layer.cornerRadius = 12
         backgroundImage.image = UIImage(named: "Background")
         searchBar.delegate = self
         myCollectionView.delegate = self
@@ -40,9 +41,9 @@ class SearchVC: UIViewController , UISearchBarDelegate{
         
         titleForSearch.text = "Look For Icone :".localized
         searchBar.placeholder = "Search here Please".localized
+        searchBar.keyboardType = .webSearch
         
-//        let TapGesture = UITapGestureRecognizer(target: self.view, action: #selector(UIView.endEditing))
-//              view.addGestureRecognizer(TapGesture)
+        hideKeyboardWhenTappedAround()
         
     }
     
@@ -75,6 +76,15 @@ class SearchVC: UIViewController , UISearchBarDelegate{
         searchBar.text = ""
         myCollectionView.reloadData()
         
+    }
+    func hideKeyboardWhenTappedAround() {
+        let tap = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
+        tap.cancelsTouchesInView = false
+        view.addGestureRecognizer(tap)
+    }
+    
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
     }
     
     // MARK: - Alert message

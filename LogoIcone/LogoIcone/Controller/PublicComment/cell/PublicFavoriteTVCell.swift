@@ -21,17 +21,22 @@ class PublicFavoriteTVCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        
         backgroundImage.image = UIImage(named: "CommentAny")
-        
-        imageUserPublic.image = nil
-        userNamePublic.text = ""
-        iconeLikePublic.image = nil
-        commentLBL.text = ""
-        
+        imageUserPublic.layer.cornerRadius = imageUserPublic.frame.height / 2
+//
         // Initialization code
     }
-    
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        
+        
+        
+                imageUserPublic.image = nil
+                userNamePublic.text = ""
+                iconeLikePublic.image = nil
+                commentLBL.text = ""
+        
+    }
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
         

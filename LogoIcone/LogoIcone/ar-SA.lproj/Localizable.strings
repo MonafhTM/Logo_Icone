@@ -6,21 +6,20 @@
   
 */
 
-"ICON" = "أيقونة";
+"ProIcon" = "أيقونة";
 "free vector icons in one place. Download all the free icons in SVG and PNG formats . Use them for web design , mobile apps" = "رموز مجانية في مكان واحد،  قم بتنزيل جميع الرموز المجانية بتنسيقات SVG و PNG. استخدمها لتصميم الويب وتطبيقات الجوال.";
 
-"LOGO" = "شعار";
-"you will Find What You Need, from Global and common logos, you can view and use them." = "سوف تجد مجموعة من الشعارات العامة و الشائعة، يمكن عرضها";
-
+"you will include your own comment on favorite icons." = "سوف تستطيع اضاقة تعليقاتك الخاصة على الايقونة المفضلة ";
     "Welcome" = "مرحبا" ;
 "E-mail Or username" = "الايميل" ;
 "Your Email " =  "الايميل";
 "Password" = "الرقم السري" ;
+" Password " = "الرقم السري" ;
 "Enter password" = "ادخل الرقم السري" ;
 "Error" = "تنبيه" ;
 "error is" =  "الخطاء هو ";
 "OK" = "حسنا" ;
-"Sign up to LogoIcon" = "التسجيل في LOGOICON" ;
+"Sign up to ProIcon" = "التسجيل في PROICON" ;
 " Email" =  "الايميل";
 "Enter your Email" = "ادخل الايميل" ;
 "your password" = "ادخل الرقم السري" ;
@@ -33,6 +32,7 @@
 "Last Name" = "الاسم الاخير" ;
 "write last name " = "ادخل الاسم الاخير" ;
 "your own space to write" = "مساحتك الخاصة" ;
+"Bio" = "الحالة";
 "AGE" = "العمر" ;
 "Gender" =  "التصنيف" ;
 "male , Female" =  "ذكر ، انثى";

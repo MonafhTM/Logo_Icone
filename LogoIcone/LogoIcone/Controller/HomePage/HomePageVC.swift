@@ -51,7 +51,6 @@ class HomePageVC: UIViewController {
         }
     }
     
-    
     // MARK: - Action Methods
     
     // Boutten move to the First section in App (SearchIconVC) by perform ....

@@ -1,7 +1,7 @@
 {
   "images" : [
     {
-      "filename" : "SidMenu.png",
+      "filename" : "creatProfiles.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
@@ -12,7 +12,7 @@
           "value" : "dark"
         }
       ],
-      "filename" : "SidManuDark.png",
+      "filename" : "creatProfilde.png",
       "idiom" : "universal",
       "scale" : "1x"
     },

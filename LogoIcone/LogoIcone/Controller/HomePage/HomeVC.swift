@@ -33,7 +33,7 @@ class HomeVC: UIPageViewController ,UIPageViewControllerDelegate, UIPageViewCont
         
         // Information for First ViewController in Screen ....
         
-        firstVC.pageTitle = "ICON".localized
+        firstVC.pageTitle = "ProIcon".localized
         firstVC.pageInfo = "free vector icons in one place. Download all the free icons in SVG and PNG formats . Use them for web design , mobile apps".localized
         firstVC.imageShow = UIImage(named: "HomeImage")
         
@@ -41,8 +41,8 @@ class HomeVC: UIPageViewController ,UIPageViewControllerDelegate, UIPageViewCont
         
         let secondVC = self.storyboard?.instantiateViewController(withIdentifier: "firstPage") as! HomePageVC
         
-        secondVC.pageTitle = "LOGO".localized
-        secondVC.pageInfo = "you will Find What You Need, from Global and common logos, you can view and use them.".localized
+        secondVC.pageTitle = "ProICON".localized
+        secondVC.pageInfo = "you will include your own comment on favorite icons.".localized
         secondVC.imageShow =  UIImage(named: "HomeImage1")
         
         // append them to UIViewController Array .....

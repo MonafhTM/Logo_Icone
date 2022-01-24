@@ -39,15 +39,23 @@ class CreateProfileVC: UIViewController , UITextFieldDelegate {
     @IBOutlet weak var gendertx: UITextField!
     
     @IBOutlet weak var backgroundImage: UIImageView!
+    @IBOutlet weak var backgroundView: UIImageView!
+    
     
     // MARK: - Objects
     
     var theImage : String?
     let imagePicker = UIImagePickerController()
 
+    fileprivate func notificationTextFiled() {
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        notificationTextFiled()
+
         usersNameLBL.text = "User Name ".localized
         userName.placeholder = "Enter your userName ".localized
         firstNameLBL.text = "First Name".localized
@@ -60,6 +68,7 @@ class CreateProfileVC: UIViewController , UITextFieldDelegate {
         genderLBL.text = "Gender".localized
         gendertx.placeholder = "male , Female".localized
         backgroundImage.image = UIImage(named: "createProfile")
+        backgroundView.image = UIImage(named: "creatProfiles")
         
         imageProfile.layer.cornerRadius = imageProfile.frame.height / 2
         
@@ -72,7 +81,7 @@ class CreateProfileVC: UIViewController , UITextFieldDelegate {
         
         let TapGesture = UITapGestureRecognizer(target: self.view, action: #selector(UIView.endEditing))
               view.addGestureRecognizer(TapGesture)
-        
+        getDataFromProfile()
     }
     
     func profile(userName :String, firstName :String, lastName :String, bio :String , age: Int ,gender : String) {
@@ -81,13 +90,34 @@ class CreateProfileVC: UIViewController , UITextFieldDelegate {
         { cheak in
             if cheak {
                 print("Done")
-                
-                let vc = self.storyboard?.instantiateViewController(identifier: "saveProfile") as! ProfileTVC
-                self.navigationController?.pushViewController(vc, animated: true)
-                
+                self.dismiss(animated: true, completion: nil)
+                //self.navigationController?.popViewController(animated: true)
+//
+//                let vc = self.storyboard?.instantiateViewController(identifier: "saveProfile") as! ProfileTVC
+//                self.navigationController?.pushViewController(vc, animated: true)
+//
             } else{
                 print("ther is error")
             }
+        }
+    }
+    
+    func getDataFromProfile(){
+        
+        if Auth.auth().currentUser?.uid == nil {
+            performSegue(withIdentifier: "signup", sender: nil)
+        } else {
+            UserApi.getProfile(uid: Auth.auth().currentUser?.uid ?? "", completion: { user in
+                self.firsNametx.text = user.firstName
+                self.lastNametx.text = user.lastName
+                self.userName.text = user.userName
+                self.gendertx.text = user.gender
+                self.agetx.text = "\(user.age ?? 0)"
+                self.biotx.text = user.bio
+                // guard
+                guard let url = URL(string: user.imageProfile ?? "") else {return}
+                self.imageProfile.kf.setImage(with: url , options: [.cacheOriginalImage])
+            })
         }
     }
     
@@ -101,10 +131,24 @@ class CreateProfileVC: UIViewController , UITextFieldDelegate {
     
     @IBAction func save(_ sender: Any) {
         
+        
         // casting to string
         guard let age = Int(agetx.text ?? "nil") else {return }
         
         profile(userName: userName.text ?? "" ,firstName: firsNametx.text ?? "" ,lastName: lastNametx.text ?? "", bio: biotx.text ?? "", age: age, gender: gendertx.text ?? "" )
+    }
+    @objc func keyboardWillShow(notification: NSNotification) {
+        if let keyboardSize = (notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue {
+            if self.view.frame.origin.y == 0 {
+                self.view.frame.origin.y -= keyboardSize.height
+            }
+        }
+    }
+
+    @objc func keyboardWillHide(notification: NSNotification) {
+        if self.view.frame.origin.y != 0 {
+            self.view.frame.origin.y = 0
+        }
     }
 }
 

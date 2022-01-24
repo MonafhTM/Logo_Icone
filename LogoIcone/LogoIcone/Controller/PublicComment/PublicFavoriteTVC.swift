@@ -31,12 +31,15 @@ class PublicFavoriteTVC: UIViewController {
         allComment.text = "Public".localized
         backgroundImage.image = UIImage(named: "Background")
         
+        
         tableView.delegate = self
         tableView.dataSource = self
         
         CommentApi.getAllComments( completion: { comment in
-            self.commentArray.append(comment)
-            self.tableView.reloadData()
+            DispatchQueue.main.async {
+                self.commentArray.append(comment)
+                self.tableView.reloadData()
+            }
         })
     }
     
@@ -69,6 +72,7 @@ extension PublicFavoriteTVC : UITableViewDelegate ,UITableViewDataSource {
         cell.userNamePublic.text = commentArray[indexPath.row].userName
         cell.commentLBL.text = commentArray[indexPath.row].textComment
         
+        print( commentArray[indexPath.row].userName)
         
         guard let url = URL(string: commentArray[indexPath.row].imageOfComment ?? "") else {return UITableViewCell()}
         cell.iconeLikePublic.kf.setImage(with: url)

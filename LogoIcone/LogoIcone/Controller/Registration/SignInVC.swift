@@ -21,6 +21,8 @@ class SignInVC : UIViewController {
     @IBOutlet weak var userNameLBL: UILabel!
     @IBOutlet weak var passwordLBL: UILabel!
     @IBOutlet weak var signInBackground: UIImageView!
+    @IBOutlet weak var backgroundView: UIImageView!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,10 +32,13 @@ class SignInVC : UIViewController {
         email.placeholder = "Your Email ".localized
         passwordLBL.text = "Password".localized
         password.placeholder = "Enter password".localized
-        signInBackground.image = UIImage(named: "SignIn")
-        let TapGesture = UITapGestureRecognizer(target: self.view, action: #selector(UIView.endEditing))
-              view.addGestureRecognizer(TapGesture)
+        signInBackground.image = UIImage(named: "Background")
+        backgroundView.image = UIImage(named: "backgroundSignIn")
         
+        let TapGesture = UITapGestureRecognizer(target: self.view, action: #selector(UIView.endEditing))
+        view.addGestureRecognizer(TapGesture)
+        
+        notificationTextFiled()
     }
     
     
@@ -59,6 +64,24 @@ class SignInVC : UIViewController {
         }
     }
     
+    fileprivate func notificationTextFiled() {
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
+    }
+    
+    @objc func keyboardWillShow(notification: NSNotification) {
+        if let keyboardSize = (notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue {
+            if self.view.frame.origin.y == 0 {
+                self.view.frame.origin.y -= keyboardSize.height
+            }
+        }
+    }
+    @objc func keyboardWillHide(notification: NSNotification) {
+        if self.view.frame.origin.y != 0 {
+            self.view.frame.origin.y = 0
+        }
+    }
+    
     // MARK: - Action Methods
     
     @IBAction func signInButt(_ sender: Any) {
@@ -72,7 +95,6 @@ class SignInVC : UIViewController {
         self.performSegue(withIdentifier: "toSignUp", sender: nil)
         
     }
-    
     
     // MARK: - Alert message
     

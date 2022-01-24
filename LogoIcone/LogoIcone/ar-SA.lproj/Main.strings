@@ -45,7 +45,7 @@
 "FeA-3b-AwE.configuration.title" = "ابدا";
 
 /* Class = "UIButton"; normalTitle = "Button"; ObjectID = "FeA-3b-AwE"; */
-"FeA-3b-AwE.normalTitle" = "Button";
+"FeA-3b-AwE.normalTitle" = "ابدا";
 
 /* Class = "UILabel"; text = "."; ObjectID = "G32-EE-6eT"; */
 "G32-EE-6eT.text" = ".";
@@ -54,7 +54,7 @@
 "GEo-ky-Row.configuration.title" = "حساب جديد";
 
 /* Class = "UIButton"; normalTitle = "Button"; ObjectID = "GEo-ky-Row"; */
-"GEo-ky-Row.normalTitle" = "Button";
+"GEo-ky-Row.normalTitle" = "حساب جديد";
 
 /* Class = "UITextField"; placeholder = "your Last name"; ObjectID = "HJs-Hq-Jvr"; */
 "HJs-Hq-Jvr.placeholder" = "الاسم الاخير";
@@ -69,7 +69,7 @@
 "ISl-Od-Wxw.configuration.title" = "حساب جديد";
 
 /* Class = "UIButton"; normalTitle = "Button"; ObjectID = "ISl-Od-Wxw"; */
-"ISl-Od-Wxw.normalTitle" = "Button";
+"ISl-Od-Wxw.normalTitle" = "تسجيل جديد";
 
 /* Class = "UILabel"; text = "*** #"; ObjectID = "Lht-zk-Qk7"; */
 "Lht-zk-Qk7.text" = "*** #";
@@ -84,7 +84,7 @@
 "OKO-72-E7B.configuration.title" = "التسجيل";
 
 /* Class = "UIButton"; normalTitle = "Button"; ObjectID = "OKO-72-E7B"; */
-"OKO-72-E7B.normalTitle" = "Button";
+"OKO-72-E7B.normalTitle" = "التسجيل";
 
 /* Class = "UITableViewSection"; headerTitle = "UserName"; ObjectID = "P7g-Wg-iiX"; */
 "P7g-Wg-iiX.headerTitle" = "اسم المستخدم";
@@ -123,7 +123,7 @@
 "XZf-13-fj2.configuration.title" = "تسجيل الدخول";
 
 /* Class = "UIButton"; normalTitle = "Button"; ObjectID = "XZf-13-fj2"; */
-"XZf-13-fj2.normalTitle" = "Button";
+"XZf-13-fj2.normalTitle" = "تسجيل الدخول";
 
 /* Class = "UILabel"; text = "Label"; ObjectID = "Z9E-5P-3Ng"; */
 "Z9E-5P-3Ng.text" = "Label";
@@ -141,7 +141,7 @@
 "bGu-Tl-hdV.configuration.title" = "الصور";
 
 /* Class = "UIButton"; normalTitle = "Button"; ObjectID = "bGu-Tl-hdV"; */
-"bGu-Tl-hdV.normalTitle" = "Button";
+"bGu-Tl-hdV.normalTitle" = "الصور";
 
 /* Class = "UITextField"; placeholder = "Enter your Email"; ObjectID = "eaX-Zh-HKP"; */
 "eaX-Zh-HKP.placeholder" = "ادخل الايميل";
@@ -171,7 +171,7 @@
 "iga-Dp-3t7.configuration.title" = "التعليقات";
 
 /* Class = "UIButton"; normalTitle = "Button"; ObjectID = "iga-Dp-3t7"; */
-"iga-Dp-3t7.normalTitle" = "Button";
+"iga-Dp-3t7.normalTitle" = "التعليقات";
 
 /* Class = "UITabBarItem"; title = "Favorite"; ObjectID = "it0-VQ-rKn"; */
 "it0-VQ-rKn.title" = "المفضلة";
@@ -204,7 +204,8 @@
 "par-u0-uf4.configuration.title" = "حفظ";
 
 /* Class = "UIButton"; normalTitle = "Button"; ObjectID = "par-u0-uf4"; */
-"par-u0-uf4.normalTitle" = "Button";
+"par-u0-uf4.normalTitle" = "حفظ";
+"KNK-V8-XsM.normalTitle" = "تحديث";
 
 /* Class = "UITextField"; placeholder = "Enter Password"; ObjectID = "q0G-QQ-6hi"; */
 "q0G-QQ-6hi.placeholder" = "ادخل الرقم السري";
@@ -246,7 +247,7 @@
 "umG-vg-tn3.configuration.title" = "حفظ";
 
 /* Class = "UIButton"; normalTitle = "Button"; ObjectID = "umG-vg-tn3"; */
-"umG-vg-tn3.normalTitle" = "Button";
+"umG-vg-tn3.normalTitle" = "حفظ";
 
 /* Class = "UILabel"; text = "Your Comment"; ObjectID = "vpB-cD-osk"; */
 "vpB-cD-osk.text" = "تعليقاتك";

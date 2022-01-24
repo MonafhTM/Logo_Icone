@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A757A017277C440700465551 /* LogoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A757A016277C440700465551 /* LogoVC.swift */; };
-		A757A019277C445700465551 /* LogoTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A757A018277C445700465551 /* LogoTVCell.swift */; };
 		A778888C27784BDB0034E303 /* VideoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A778888B27784BDB0034E303 /* VideoVC.swift */; };
 		A778888E27784CFA0034E303 /* ProfileTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A778888D27784CFA0034E303 /* ProfileTVC.swift */; };
 		A778889827787CFE0034E303 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A778889727787CFE0034E303 /* SignInVC.swift */; };
@@ -43,7 +41,6 @@
 		A7A2EA29278614CB00F01CBD /* YourCommentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A2EA28278614CB00F01CBD /* YourCommentVC.swift */; };
 		A7A2EA2B27862A6100F01CBD /* YourCommentTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A2EA2A27862A6100F01CBD /* YourCommentTVCell.swift */; };
 		A7BAA458278D59A200B296EB /* LocalizableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7BAA457278D59A200B296EB /* LocalizableVC.swift */; };
-		A7CF99D3278B07710080996C /* Brandfetch.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CF99D2278B07710080996C /* Brandfetch.swift */; };
 		A7CF99D8278C30A10080996C /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = A7CF99D7278C30A10080996C /* Kingfisher */; };
 		A7CF99DA278C34DE0080996C /* PublicFavoriteTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CF99D9278C34DE0080996C /* PublicFavoriteTVC.swift */; };
 		A7CF99DC278C35DE0080996C /* PublicFavoriteTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CF99DB278C35DE0080996C /* PublicFavoriteTVCell.swift */; };
@@ -55,8 +52,6 @@
 
 /* Begin PBXFileReference section */
 		A70BD5D1279438D600FF9C39 /* ar-SA */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "ar-SA"; path = "ar-SA.lproj/Main.strings"; sourceTree = "<group>"; };
-		A757A016277C440700465551 /* LogoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoVC.swift; sourceTree = "<group>"; };
-		A757A018277C445700465551 /* LogoTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoTVCell.swift; sourceTree = "<group>"; };
 		A775B93E279521AB00A2B15B /* LogoIcone.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LogoIcone.entitlements; sourceTree = "<group>"; };
 		A778888B27784BDB0034E303 /* VideoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoVC.swift; sourceTree = "<group>"; };
 		A778888D27784CFA0034E303 /* ProfileTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTVC.swift; sourceTree = "<group>"; };
@@ -86,7 +81,6 @@
 		A7A2EA28278614CB00F01CBD /* YourCommentVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YourCommentVC.swift; sourceTree = "<group>"; };
 		A7A2EA2A27862A6100F01CBD /* YourCommentTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YourCommentTVCell.swift; sourceTree = "<group>"; };
 		A7BAA457278D59A200B296EB /* LocalizableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizableVC.swift; sourceTree = "<group>"; };
-		A7CF99D2278B07710080996C /* Brandfetch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Brandfetch.swift; sourceTree = "<group>"; };
 		A7CF99D9278C34DE0080996C /* PublicFavoriteTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublicFavoriteTVC.swift; sourceTree = "<group>"; };
 		A7CF99DB278C35DE0080996C /* PublicFavoriteTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublicFavoriteTVCell.swift; sourceTree = "<group>"; };
 		A7CF99DD278C3F710080996C /* CommentApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentApi.swift; sourceTree = "<group>"; };
@@ -129,18 +123,8 @@
 			isa = PBXGroup;
 			children = (
 				A778889D27787F610034E303 /* Icons.swift */,
-				A7CF99D2278B07710080996C /* Brandfetch.swift */,
 			);
 			path = "API-Struct";
-			sourceTree = "<group>";
-		};
-		A757A015277C0B2000465551 /* Logo */ = {
-			isa = PBXGroup;
-			children = (
-				A7CBFD7927929A4B0000E886 /* cell */,
-				A757A016277C440700465551 /* LogoVC.swift */,
-			);
-			path = Logo;
 			sourceTree = "<group>";
 		};
 		A778887C2777C6EF0034E303 /* SideMenu */ = {
@@ -225,7 +209,6 @@
 				A783CD962777A84E00D1503B /* HomePage */,
 				A778889F27787FE80034E303 /* Registration */,
 				A79BDC9D277AE9630029DADA /* SearchIcon */,
-				A757A015277C0B2000465551 /* Logo */,
 				A79BDCA7277B1AA20029DADA /* DownloadVC */,
 				A7CF99E4278C5EF20080996C /* UserComment */,
 				A7CF99E3278C5EEC0080996C /* PublicComment */,
@@ -274,14 +257,6 @@
 			children = (
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		A7CBFD7927929A4B0000E886 /* cell */ = {
-			isa = PBXGroup;
-			children = (
-				A757A018277C445700465551 /* LogoTVCell.swift */,
-			);
-			path = cell;
 			sourceTree = "<group>";
 		};
 		A7CBFD7C279305070000E886 /* cell */ = {
@@ -428,7 +403,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				A79BDCB4277B4E670029DADA /* TableMuneTVC.swift in Sources */,
-				A757A017277C440700465551 /* LogoVC.swift in Sources */,
 				A778888E27784CFA0034E303 /* ProfileTVC.swift in Sources */,
 				A778889E27787F610034E303 /* Icons.swift in Sources */,
 				A778889C27787EED0034E303 /* UserApi.swift in Sources */,
@@ -444,7 +418,6 @@
 				A778888C27784BDB0034E303 /* VideoVC.swift in Sources */,
 				A77888A1277880250034E303 /* SignUpVC.swift in Sources */,
 				A7BAA458278D59A200B296EB /* LocalizableVC.swift in Sources */,
-				A7CF99D3278B07710080996C /* Brandfetch.swift in Sources */,
 				A778889A27787E950034E303 /* User.swift in Sources */,
 				A783CD6627774BD000D1503B /* AppDelegate.swift in Sources */,
 				A7A2EA29278614CB00F01CBD /* YourCommentVC.swift in Sources */,
@@ -454,7 +427,6 @@
 				A79BDCA4277B17780029DADA /* Search+CollectionV.swift in Sources */,
 				A7A2EA2B27862A6100F01CBD /* YourCommentTVCell.swift in Sources */,
 				A7CF99DC278C35DE0080996C /* PublicFavoriteTVCell.swift in Sources */,
-				A757A019277C445700465551 /* LogoTVCell.swift in Sources */,
 				A79BDCA2277B129D0029DADA /* Search+EX.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -543,7 +515,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -599,7 +571,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -626,6 +598,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -656,6 +629,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

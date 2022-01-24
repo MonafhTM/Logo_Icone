@@ -23,7 +23,7 @@ extension SearchVC: UICollectionViewDelegateFlowLayout,UICollectionViewDataSourc
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! CollectionViewCell
         
-//        convert from url to string ...
+        //        convert from url to string ...
         
         guard let url = URL(string: icons_Objects[indexPath.row].rasterSizes[8].formats[0].previewURL) else { return UICollectionViewCell() }
         
@@ -32,7 +32,7 @@ extension SearchVC: UICollectionViewDelegateFlowLayout,UICollectionViewDataSourc
         return cell
     }
     
-//     method to move when select on image cell ...
+    //     method to move when select on image cell ...
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
         iconFormatElement = icons_Objects[indexPath.row].rasterSizes[8].formats[0]
@@ -45,13 +45,13 @@ extension SearchVC: UICollectionViewDelegateFlowLayout,UICollectionViewDataSourc
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         print("it's move ...")
     }
-//     methods for control level cell ....
+    //     methods for control level cell ....
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: collectionView.frame.width/4  , height: collectionView.frame.height/4   )
     }
     
-    // MARK: - prepare Methods 
+    // MARK: - prepare Methods
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let vc = segue.destination as? DownloadIconVC
@@ -59,6 +59,5 @@ extension SearchVC: UICollectionViewDelegateFlowLayout,UICollectionViewDataSourc
         vc?.iconFormatElement = iconFormatElement
         
     }
-    
 }
 

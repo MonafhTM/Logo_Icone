@@ -76,4 +76,9 @@ class ProfileTVC: UITableViewController  {
         performSegue(withIdentifier: "signup", sender: nil)
         
     }
+    
+    @IBAction func update(_ sender: Any) {
+        
+        performSegue(withIdentifier: "updateProfile", sender: nil)
+    }
 }
